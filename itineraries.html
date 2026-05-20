@@ -40,7 +40,11 @@
       backdrop-filter: blur(10px);
     }
     .nav-logo { text-decoration: none; display: flex; align-items: center; }
-    .nav-logo img { height: 80px; width: auto; display: block; }
+    .nav-logo img {
+      height: 78px;
+      width: auto;
+      display: block;
+    }
     .nav-links { display: flex; gap: 28px; align-items: center; list-style: none; }
     .nav-links a {
       text-decoration: none; font-size: 13px; font-weight: 400;
@@ -368,7 +372,19 @@
       gap: 48px; padding-bottom: 56px;
       border-bottom: 1px solid rgba(250,246,238,0.12); margin-bottom: 32px;
     }
-    .footer-logo img { height: 64px; width: auto; display: block; }
+    .footer-logo {
+      display: inline-flex;
+      align-items: center;
+      background: rgba(255,255,255,0.92);
+      padding: 10px 14px;
+      border-radius: 6px;
+    }
+    
+    .footer-logo img {
+      height: 54px;
+      width: auto;
+      display: block;
+    }
     .footer-tagline {
       font-size: 13px; font-weight: 300; line-height: 1.8;
       color: rgba(250,246,238,0.5); margin-top: 20px; max-width: 240px;
@@ -530,8 +546,8 @@
 
 <!-- NAV -->
 <nav>
-  <a href="index.html" class="nav-logo">
-    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80" alt="JOY Tours" />
+  <a href="index.html" class="nav-logo" aria-label="JOY Tours Int">
+    <img src="assets/images/assets/logo/joy-tours-logo.png" alt="JOY Tours logo" />
   </a>
   <ul class="nav-links">
     <li><a href="index.html">Home</a></li>
@@ -3714,7 +3730,9 @@
 <footer>
   <div class="footer-top">
     <div>
-      <div class="footer-logo"><img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80" alt="JOY Tours" /></div>
+      <div class="footer-logo">
+        <img src="assets/images/assets/logo/joy-tours-logo.png" alt="JOY Tours logo" />
+      </div>
       <p class="footer-tagline">Crafting meaningful journeys to the world's most historic destinations since 2026.</p>
       <div class="footer-social">
         <a href="#" title="Facebook">f</a>
