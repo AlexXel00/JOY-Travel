@@ -73,6 +73,7 @@
       flex-direction: column;
       justify-content: center;
       padding: 72px 5% 72px 6%;
+      transform: translateY(-18px);
     }
     .hero-eyebrow { display: flex; align-items: center; gap: 12px; margin-bottom: 32px; }
     .hero-line { width: 32px; height: 1px; background: var(--gold); }
@@ -357,7 +358,10 @@
     @media (max-width: 1024px) {
       .hero { grid-template-columns: 1fr; min-height: auto; }
       .hero-right { height: 75vw; padding: 0 5% 32px; }
-      .hero-left { padding: 60px 5% 40px; }
+      .hero-left {
+        padding: 60px 5% 40px;
+        transform: none;
+      }
       .dest-grid { grid-template-columns: 1fr; }
       .dest-card.large { grid-row: span 1; }
       .dest-card.large img { height: 380px; }
