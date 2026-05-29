@@ -215,7 +215,18 @@
 
     /* WHY */
     .why-section { background: var(--cream); }
-    .why-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+
+    .why-section .section-hdr {
+      padding-left: 64px;
+      margin-bottom: 44px;
+    }
+    
+    .why-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
     .why-feature { display: flex; gap: 20px; padding: 28px 0; border-bottom: 1px solid var(--cream-dark); }
     .why-feature:first-of-type { padding-top: 0; }
     .why-feature:last-of-type { border-bottom: none; }
@@ -360,7 +371,9 @@
       .hero-right { height: 75vw; padding: 0 5% 32px; }
       .hero-left {
         padding: 60px 5% 40px;
-        transform: none;
+        transform: none;}
+      .why-section .section-hdr {
+        padding-left: 0;
       }
       .dest-grid { grid-template-columns: 1fr; }
       .dest-card.large { grid-row: span 1; }
