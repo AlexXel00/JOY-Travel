@@ -704,9 +704,7 @@
 
     <div class="itin-card" data-section="rome" onclick="openModal('italy1')">
       <div class="itin-card-img">
-        <div class="itin-card-img-placeholder">
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><path d="M8 40l10-20 8 13 6-8 10 15H8Z" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/><circle cx="34" cy="14" r="4" stroke="#D4962A" stroke-width="1.5"/></svg>
-        </div>
+        <img src="assets/images/Trevi_Fountain.jpg" alt="Trevi Fountain, Rome" loading="lazy" />
         <div class="itin-card-badge">Heritage & Leisure</div>
       </div>
       <div class="itin-card-body">
@@ -2184,13 +2182,19 @@
 
 <!-- ITALY 1 -->
 <div class="modal-overlay" id="modal-italy1">
-  <div class="modal">
-    <div class="modal-hero">
-      <div class="itin-card-img-placeholder" style="height:100%"></div>
-      <div class="modal-hero-overlay"></div>
-      <div class="modal-hero-content"><div class="modal-hero-region">Rome · Florence · Siena · Venice</div><div class="modal-hero-title">Grand Tour Italy</div></div>
-      <button class="modal-close" onclick="closeModal('italy1')"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 1l12 12M13 1L1 13" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+  <div class="modal-hero">
+    <img src="assets/images/Trevi_Fountain.jpg" alt="Trevi Fountain, Rome" />
+    <div class="modal-hero-overlay"></div>
+    <div class="modal-hero-content">
+      <div class="modal-hero-region">Rome · Florence · Siena · Venice</div>
+      <div class="modal-hero-title">Grand Tour Italy</div>
     </div>
+    <button class="modal-close" onclick="closeModal('italy1')">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+        <path d="M1 1l12 12M13 1L1 13" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </div>
     <div class="modal-meta">
       <div class="modal-meta-item"><div class="modal-meta-label">Duration</div><div class="modal-meta-value">11 Days</div></div>
       <div class="modal-meta-item"><div class="modal-meta-label">Style</div><div class="modal-meta-value">Heritage & Leisure</div></div>
@@ -2200,41 +2204,73 @@
       <p class="modal-focus">Rome, Tuscany and Venice — ancient history, Renaissance art, Chianti wine and the canals of La Serenissima all in one unforgettable journey.</p>
       <div class="modal-gallery">
         <div class="gallery-track">
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/Trevi_Fountain.jpg" class="gallery-slide-img" alt="Trevi Fountain, Rome" />
+            <div class="gallery-caption">Trevi Fountain, Rome</div>
           </div>
-          <div class="gallery-caption">Colosseum, Rome</div>
-        </div>
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/colosseum_rome.jpeg" class="gallery-slide-img" alt="Colosseum, Rome" />
+            <div class="gallery-caption">Colosseum, Rome</div>
           </div>
-          <div class="gallery-caption">Ponte Vecchio, Florence</div>
-        </div>
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/st_peter_basilica.jpg" class="gallery-slide-img" alt="St. Peter's Basilica, Rome" />
+            <div class="gallery-caption">St. Peter's Basilica, Rome</div>
           </div>
-          <div class="gallery-caption">Piazza del Campo, Siena</div>
-        </div>
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/Ponte_vecchio.jpg" class="gallery-slide-img" alt="Ponte Vecchio, Florence" />
+            <div class="gallery-caption">Ponte Vecchio, Florence</div>
           </div>
-          <div class="gallery-caption">Grand Canal, Venice</div>
-        </div>
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/uffizi_gallery.jpg" class="gallery-slide-img" alt="Uffizi Gallery, Florence" />
+            <div class="gallery-caption">Uffizi Gallery, Florence</div>
           </div>
-          <div class="gallery-caption">Burano colourful houses</div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/siena.jpeg" class="gallery-slide-img" alt="Siena" />
+            <div class="gallery-caption">Siena</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/venice_grand_canal.jpg" class="gallery-slide-img" alt="Grand Canal, Venice" />
+            <div class="gallery-caption">Grand Canal, Venice</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/murano.jpg" class="gallery-slide-img" alt="Murano, Venice" />
+            <div class="gallery-caption">Murano, Venice</div>
+          </div>
+      
         </div>
+      
+        <button class="gallery-btn gallery-prev">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+            <path d="M6 2L3 5l3 3" stroke="#1E3F7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      
+        <button class="gallery-btn gallery-next">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+            <path d="M4 2l3 3-3 3" stroke="#1E3F7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      
+        <div class="gallery-dots">
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
         </div>
-        <button class="gallery-btn gallery-prev"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M6 2L3 5l3 3" stroke="#1E3F7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <button class="gallery-btn gallery-next"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M4 2l3 3-3 3" stroke="#1E3F7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <div class="gallery-dots"><button class="gallery-dot"></button><button class="gallery-dot"></button><button class="gallery-dot"></button><button class="gallery-dot"></button><button class="gallery-dot"></button></div>
-        <div class="gallery-counter">1 / 5</div>
+      
+        <div class="gallery-counter">1 / 8</div>
       </div>
       <div class="modal-days-title">Day by Day</div>
       <div class="accordion-item">
