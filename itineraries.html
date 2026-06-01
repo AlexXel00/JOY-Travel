@@ -736,9 +736,7 @@
 
     <div class="itin-card" data-section="rome" onclick="openModal('rome1')">
       <div class="itin-card-img">
-        <div class="itin-card-img-placeholder">
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><path d="M8 40l10-20 8 13 6-8 10 15H8Z" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/><circle cx="34" cy="14" r="4" stroke="#D4962A" stroke-width="1.5"/></svg>
-        </div>
+        <img src="assets/images/basilica_saint_francis.jpg" alt="Basilica of Saint Francis of Assisi, Assisi" loading="lazy" />
         <div class="itin-card-badge">Evangelical</div>
       </div>
       <div class="itin-card-body">
@@ -2621,10 +2619,17 @@
 <div class="modal-overlay" id="modal-rome1">
   <div class="modal">
     <div class="modal-hero">
-      <div class="itin-card-img-placeholder" style="height:100%"></div>
+      <img src="assets/images/basilica_saint_francis.jpg" alt="Basilica of Saint Francis of Assisi, Assisi" />
       <div class="modal-hero-overlay"></div>
-      <div class="modal-hero-content"><div class="modal-hero-region">Italy</div><div class="modal-hero-title">Protestant Biblical Heritage Tour</div></div>
-      <button class="modal-close" onclick="closeModal('rome1')"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 1l12 12M13 1L1 13" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+      <div class="modal-hero-content">
+        <div class="modal-hero-region">Rome · Assisi</div>
+        <div class="modal-hero-title">Protestant Biblical Heritage Tour</div>
+      </div>
+      <button class="modal-close" onclick="closeModal('rome1')">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M1 1l12 12M13 1L1 13" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </button>
     </div>
     <div class="modal-meta">
       <div class="modal-meta-item"><div class="modal-meta-label">Duration</div><div class="modal-meta-value">8 Days</div></div>
@@ -2635,35 +2640,73 @@
       <p class="modal-focus">Life of the early Church, the footsteps of Paul and Peter, the Catacombs and the spread of the Gospel in the Roman world.</p>
       <div class="modal-gallery">
         <div class="gallery-track">
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/Trevi_Fountain.jpg" class="gallery-slide-img" alt="Trevi Fountain, Rome" />
+            <div class="gallery-caption">Trevi Fountain, Rome</div>
           </div>
-          <div class="gallery-caption">St. Peter's Basilica, Vatican</div>
-        </div>
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/mamertine_prison.jpg" class="gallery-slide-img" alt="Mamertine Prison, Rome" />
+            <div class="gallery-caption">Mamertine Prison, Rome</div>
           </div>
-          <div class="gallery-caption">Catacombs of San Callisto</div>
-        </div>
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/basilica_saint_paul.jpg" class="gallery-slide-img" alt="Basilica of Saint Paul Outside the Walls, Rome" />
+            <div class="gallery-caption">Basilica of Saint Paul Outside the Walls, Rome</div>
           </div>
-          <div class="gallery-caption">Colosseum, Rome</div>
-        </div>
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/Castel_sant_Angelo.jpg" class="gallery-slide-img" alt="Castel Sant'Angelo, Rome" />
+            <div class="gallery-caption">Castel Sant'Angelo, Rome</div>
           </div>
-          <div class="gallery-caption">Basilica of Saint Francis, Assisi</div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/arch_constantine.jpg" class="gallery-slide-img" alt="Arch of Constantine, Rome" />
+            <div class="gallery-caption">Arch of Constantine, Rome</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/basilica_saint_john.jpg" class="gallery-slide-img" alt="Archbasilica of Saint John Lateran, Rome" />
+            <div class="gallery-caption">Archbasilica of Saint John Lateran, Rome</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/basilica_saint_francis.jpg" class="gallery-slide-img" alt="Basilica of Saint Francis of Assisi, Assisi" />
+            <div class="gallery-caption">Basilica of Saint Francis of Assisi, Assisi</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/assisi.jpg" class="gallery-slide-img" alt="Assisi Town" />
+            <div class="gallery-caption">Assisi Town</div>
+          </div>
+      
         </div>
+      
+        <button class="gallery-btn gallery-prev">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+            <path d="M6 2L3 5l3 3" stroke="#1E3F7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      
+        <button class="gallery-btn gallery-next">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+            <path d="M4 2l3 3-3 3" stroke="#1E3F7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      
+        <div class="gallery-dots">
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
         </div>
-        <button class="gallery-btn gallery-prev"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M6 2L3 5l3 3" stroke="#1E3F7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <button class="gallery-btn gallery-next"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M4 2l3 3-3 3" stroke="#1E3F7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <div class="gallery-dots"><button class="gallery-dot"></button><button class="gallery-dot"></button><button class="gallery-dot"></button><button class="gallery-dot"></button></div>
-        <div class="gallery-counter">1 / 4</div>
+      
+        <div class="gallery-counter">1 / 8</div>
       </div>
       <div class="modal-days-title">Day by Day</div>
       <div class="accordion-item">
