@@ -752,9 +752,7 @@
 
     <div class="itin-card" data-section="rome" onclick="openModal('rome2')">
       <div class="itin-card-img">
-        <div class="itin-card-img-placeholder">
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><path d="M8 40l10-20 8 13 6-8 10 15H8Z" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/><circle cx="34" cy="14" r="4" stroke="#D4962A" stroke-width="1.5"/></svg>
-        </div>
+        <img src="assets/images/st_peters_basilica_vatican.jpg" alt="St. Peter's Basilica, Vatican" loading="lazy" />
         <div class="itin-card-badge">Catholic</div>
       </div>
       <div class="itin-card-body">
@@ -2817,10 +2815,17 @@
 <div class="modal-overlay" id="modal-rome2">
   <div class="modal">
     <div class="modal-hero">
-      <div class="itin-card-img-placeholder" style="height:100%"></div>
+      <img src="assets/images/st_peters_basilica_vatican.jpg" alt="St. Peter's Basilica, Vatican" />
       <div class="modal-hero-overlay"></div>
-      <div class="modal-hero-content"><div class="modal-hero-region">Italy</div><div class="modal-hero-title">Catholic Pilgrimage Tour – Rome</div></div>
-      <button class="modal-close" onclick="closeModal('rome2')"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 1l12 12M13 1L1 13" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+      <div class="modal-hero-content">
+        <div class="modal-hero-region">Rome · Vatican · Assisi</div>
+        <div class="modal-hero-title">Catholic Pilgrimage Tour – Rome</div>
+      </div>
+      <button class="modal-close" onclick="closeModal('rome2')">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M1 1l12 12M13 1L1 13" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </button>
     </div>
     <div class="modal-meta">
       <div class="modal-meta-item"><div class="modal-meta-label">Duration</div><div class="modal-meta-value">8 Days</div></div>
@@ -2831,35 +2836,79 @@
       <p class="modal-focus">Catholic spirituality, saints, relics and the Vatican — the four major basilicas, Catacombs, Assisi and daily Mass.</p>
       <div class="modal-gallery">
         <div class="gallery-track">
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/vatican_city.jpg" class="gallery-slide-img" alt="Vatican City" />
+            <div class="gallery-caption">Vatican City</div>
           </div>
-          <div class="gallery-caption">St. Peter's Square, Vatican</div>
-        </div>
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/st_peters_basilica_vatican.jpg" class="gallery-slide-img" alt="St. Peter's Basilica, Vatican" />
+            <div class="gallery-caption">St. Peter's Basilica, Vatican</div>
           </div>
-          <div class="gallery-caption">Sistine Chapel ceiling</div>
-        </div>
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/sistine_chapel.jfif" class="gallery-slide-img" alt="Sistine Chapel, Vatican" />
+            <div class="gallery-caption">Sistine Chapel, Vatican</div>
           </div>
-          <div class="gallery-caption">Basilica of Saint Francis, Assisi</div>
-        </div>
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/inside_basilica_saint_john.jpg" class="gallery-slide-img" alt="Inside the Archbasilica of Saint John Lateran, Rome" />
+            <div class="gallery-caption">Inside the Archbasilica of Saint John Lateran, Rome</div>
           </div>
-          <div class="gallery-caption">Scala Sancta, Rome</div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/basilica_saint_paul.jpg" class="gallery-slide-img" alt="Basilica of Saint Paul Outside the Walls, Rome" />
+            <div class="gallery-caption">Basilica of Saint Paul Outside the Walls, Rome</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/catacombs_san_callisto.jpg" class="gallery-slide-img" alt="Catacombs of San Callisto, Rome" />
+            <div class="gallery-caption">Catacombs of San Callisto, Rome</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/mamertine_prison.jpg" class="gallery-slide-img" alt="Mamertine Prison, Rome" />
+            <div class="gallery-caption">Mamertine Prison, Rome</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/basilica_saint_francis.jpg" class="gallery-slide-img" alt="Basilica of Saint Francis of Assisi, Assisi" />
+            <div class="gallery-caption">Basilica of Saint Francis of Assisi, Assisi</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/Scala_Sancta.jpg" class="gallery-slide-img" alt="Scala Sancta (Holy Stairs), Rome" />
+            <div class="gallery-caption">Scala Sancta (Holy Stairs), Rome</div>
+          </div>
+      
         </div>
+      
+        <button class="gallery-btn gallery-prev">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+            <path d="M6 2L3 5l3 3" stroke="#1E3F7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      
+        <button class="gallery-btn gallery-next">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+            <path d="M4 2l3 3-3 3" stroke="#1E3F7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      
+        <div class="gallery-dots">
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
         </div>
-        <button class="gallery-btn gallery-prev"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M6 2L3 5l3 3" stroke="#1E3F7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <button class="gallery-btn gallery-next"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M4 2l3 3-3 3" stroke="#1E3F7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <div class="gallery-dots"><button class="gallery-dot"></button><button class="gallery-dot"></button><button class="gallery-dot"></button><button class="gallery-dot"></button></div>
-        <div class="gallery-counter">1 / 4</div>
+      
+        <div class="gallery-counter">1 / 9</div>
       </div>
       <div class="modal-days-title">Day by Day</div>
       <div class="accordion-item">
@@ -2922,16 +2971,7 @@
       <div class="modal-dates">
         <div class="modal-dates-title">Next Planned Tours</div>
         <div class="date-row">
-          <span class="date-row-range">Apr 20 – Apr 27, 2026</span>
-          <span class="date-badge full">Fully Booked</span>
-        </div>
-        <div class="date-row">
-          <span class="date-row-range">Jul 20 – Jul 27, 2026</span>
-          <span class="date-badge available">Free Spots</span>
-        </div>
-        <div class="date-row">
-          <span class="date-row-range">Nov 23 – Nov 30, 2026</span>
-          <span class="date-badge available">Free Spots</span>
+          <span class="date-row-range">No planned tour dates are currently available for this itinerary.</span>
         </div>
       </div>
     <div class="modal-actions">
@@ -3980,9 +4020,6 @@
     { id: 'hl6',     name: 'Cultural & Leisure Experience',          start: '2026-05-04', end: '2026-05-15', status: 'available' },
     { id: 'hl6',     name: 'Cultural & Leisure Experience',          start: '2026-07-06', end: '2026-07-17', status: 'available' },
     { id: 'hl6',     name: 'Cultural & Leisure Experience',          start: '2026-10-19', end: '2026-10-30', status: 'available' },
-    { id: 'rome2',   name: 'Catholic Pilgrimage Tour – Rome',        start: '2026-04-20', end: '2026-04-27', status: 'full' },
-    { id: 'rome2',   name: 'Catholic Pilgrimage Tour – Rome',        start: '2026-07-20', end: '2026-07-27', status: 'available' },
-    { id: 'rome2',   name: 'Catholic Pilgrimage Tour – Rome',        start: '2026-11-23', end: '2026-11-30', status: 'available' },
     { id: 'turkey1', name: 'Seven Churches of Revelation',           start: '2026-04-06', end: '2026-04-13', status: 'available' },
     { id: 'turkey1', name: 'Seven Churches of Revelation',           start: '2026-06-29', end: '2026-07-06', status: 'available' },
     { id: 'turkey1', name: 'Seven Churches of Revelation',           start: '2026-10-05', end: '2026-10-12', status: 'available' },
