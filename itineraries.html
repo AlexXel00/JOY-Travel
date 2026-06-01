@@ -587,9 +587,7 @@
 
     <div class="itin-card" data-section="holy-land" onclick="openModal('hl1')">
       <div class="itin-card-img">
-        <div class="itin-card-img-placeholder">
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><path d="M8 40l10-20 8 13 6-8 10 15H8Z" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/><circle cx="34" cy="14" r="4" stroke="#D4962A" stroke-width="1.5"/></svg>
-        </div>
+        <img src="assets/images/sea_of_galilee.jpg" alt="Sea of Galilee, Israel" loading="lazy" />
         <div class="itin-card-badge">Evangelical</div>
       </div>
       <div class="itin-card-body">
@@ -1549,7 +1547,7 @@
 <div class="modal-overlay" id="modal-hl1">
   <div class="modal">
     <div class="modal-hero">
-      <div class="itin-card-img-placeholder" style="height:100%"><svg width="64" height="64" viewBox="0 0 48 48" fill="none"><path d="M8 40l10-20 8 13 6-8 10 15H8Z" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/><circle cx="34" cy="14" r="4" stroke="#D4962A" stroke-width="1.5"/></svg></div>
+      <img src="assets/images/sea_of_galilee.jpg" alt="Sea of Galilee, Israel" />
       <div class="modal-hero-overlay"></div>
       <div class="modal-hero-content">
         <div class="modal-hero-region">Israel · Palestine · Jordan</div>
@@ -1566,30 +1564,62 @@
       <p class="modal-focus">Biblical fulfillment, prophetic themes and New Testament sites brought to life. From Caesarea and the Sea of Galilee to Jerusalem's Garden Tomb — a journey through the scriptures.</p>
       <div class="modal-gallery">
         <div class="gallery-track">
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/church_of_nativity.jpg" class="gallery-slide-img" alt="Church of Nativity, Bethlehem" />
+            <div class="gallery-caption">Church of Nativity, Bethlehem</div>
           </div>
-          <div class="gallery-caption">Sea of Galilee at dawn</div>
-        </div>
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/garden_of_gethsemane.webp" class="gallery-slide-img" alt="Garden of Gethsemane, Jerusalem" />
+            <div class="gallery-caption">Garden of Gethsemane, Jerusalem</div>
           </div>
-          <div class="gallery-caption">Western Wall, Jerusalem</div>
-        </div>
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/garden_tomb.jpg" class="gallery-slide-img" alt="Garden Tomb, Jerusalem" />
+            <div class="gallery-caption">Garden Tomb, Jerusalem</div>
           </div>
-          <div class="gallery-caption">Garden Tomb, Jerusalem</div>
-        </div>
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/golan_heights.webp" class="gallery-slide-img" alt="Golan Heights, Israel" />
+            <div class="gallery-caption">Golan Heights, Israel</div>
           </div>
-          <div class="gallery-caption">Capernaum ruins by the lake</div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/jericho_old_town.jpg" class="gallery-slide-img" alt="Jericho old town" />
+            <div class="gallery-caption">Jericho old town</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/sea_of_galilee.jpg" class="gallery-slide-img" alt="Sea of Galilee, Israel" />
+            <div class="gallery-caption">Sea of Galilee, Israel</div>
+          </div>
+      
         </div>
+      
+        <button class="gallery-btn gallery-prev">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+            <path d="M6 2L3 5l3 3" stroke="#1E3F7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      
+        <button class="gallery-btn gallery-next">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+            <path d="M4 2l3 3-3 3" stroke="#1E3F7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      
+        <div class="gallery-dots">
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+        </div>
+      
+        <div class="gallery-counter">1 / 6</div>
+      </div>
         </div>
         <button class="gallery-btn gallery-prev"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M6 2L3 5l3 3" stroke="#1E3F7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
         <button class="gallery-btn gallery-next"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M4 2l3 3-3 3" stroke="#1E3F7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
