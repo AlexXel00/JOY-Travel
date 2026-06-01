@@ -779,9 +779,7 @@
 
     <div class="itin-card" data-section="turkey" onclick="openModal('turkey1')">
       <div class="itin-card-img">
-        <div class="itin-card-img-placeholder">
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><path d="M8 40l10-20 8 13 6-8 10 15H8Z" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/><circle cx="34" cy="14" r="4" stroke="#D4962A" stroke-width="1.5"/></svg>
-        </div>
+        <img src="assets/images/Pergamon.jpg" alt="Pergamon, Izmir" loading="lazy" />
         <div class="itin-card-badge">Biblical</div>
       </div>
       <div class="itin-card-body">
@@ -2982,14 +2980,19 @@
 </div>
 
 <!-- TURKEY 1 -->
-<div class="modal-overlay" id="modal-turkey1">
-  <div class="modal">
-    <div class="modal-hero">
-      <div class="itin-card-img-placeholder" style="height:100%"></div>
-      <div class="modal-hero-overlay"></div>
-      <div class="modal-hero-content"><div class="modal-hero-region">Turkey</div><div class="modal-hero-title">Seven Churches of Revelation</div></div>
-      <button class="modal-close" onclick="closeModal('turkey1')"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 1l12 12M13 1L1 13" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg></button>
-    </div>
+<div class="modal-hero">
+  <img src="assets/images/Pergamon.jpg" alt="Pergamon, Izmir" />
+  <div class="modal-hero-overlay"></div>
+  <div class="modal-hero-content">
+    <div class="modal-hero-region">Turkey · Seven Churches of Revelation</div>
+    <div class="modal-hero-title">Seven Churches of Revelation</div>
+  </div>
+  <button class="modal-close" onclick="closeModal('turkey1')">
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+      <path d="M1 1l12 12M13 1L1 13" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+    </svg>
+  </button>
+</div>
     <div class="modal-meta">
       <div class="modal-meta-item"><div class="modal-meta-label">Duration</div><div class="modal-meta-value">8 Days</div></div>
       <div class="modal-meta-item"><div class="modal-meta-label">Style</div><div class="modal-meta-value">Biblical</div></div>
@@ -2999,35 +3002,73 @@
       <p class="modal-focus">The seven churches of Revelation, apostolic sites and Paul's missionary journeys — from Istanbul to Ephesus.</p>
       <div class="modal-gallery">
         <div class="gallery-track">
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/blue_mosque_istanbul.jpg" class="gallery-slide-img" alt="Blue Mosque, Istanbul" />
+            <div class="gallery-caption">Blue Mosque, Istanbul</div>
           </div>
-          <div class="gallery-caption">Hagia Sophia, Istanbul</div>
-        </div>
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/Pergamon.jpg" class="gallery-slide-img" alt="Pergamon, Izmir" />
+            <div class="gallery-caption">Pergamon, Izmir</div>
           </div>
-          <div class="gallery-caption">Library of Celsus, Ephesus</div>
-        </div>
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/sardis.jpg" class="gallery-slide-img" alt="Sardis, Sart" />
+            <div class="gallery-caption">Sardis, Sart</div>
           </div>
-          <div class="gallery-caption">Pamukkale travertine terraces</div>
-        </div>
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/Laodicea.jpg" class="gallery-slide-img" alt="Laodicea — the lukewarm church, Goncali" />
+            <div class="gallery-caption">Laodicea — the lukewarm church, Goncali</div>
           </div>
-          <div class="gallery-caption">Pergamon ancient theatre</div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/Hierapolis.jpeg" class="gallery-slide-img" alt="Hierapolis, Denizli" />
+            <div class="gallery-caption">Hierapolis, Denizli</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/Pamukkale.jpg" class="gallery-slide-img" alt="Walk at Pamukkale" />
+            <div class="gallery-caption">Walk at Pamukkale</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/library_celsus.jpg" class="gallery-slide-img" alt="Library of Celsus, Ephesus" />
+            <div class="gallery-caption">Library of Celsus, Ephesus</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/st_john_basilica.jpg" class="gallery-slide-img" alt="Basilica of Saint John the Theologian, Ephesus" />
+            <div class="gallery-caption">Basilica of Saint John the Theologian, Ephesus</div>
+          </div>
+      
         </div>
+      
+        <button class="gallery-btn gallery-prev">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+            <path d="M6 2L3 5l3 3" stroke="#1E3F7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      
+        <button class="gallery-btn gallery-next">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+            <path d="M4 2l3 3-3 3" stroke="#1E3F7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      
+        <div class="gallery-dots">
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
         </div>
-        <button class="gallery-btn gallery-prev"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M6 2L3 5l3 3" stroke="#1E3F7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <button class="gallery-btn gallery-next"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M4 2l3 3-3 3" stroke="#1E3F7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <div class="gallery-dots"><button class="gallery-dot"></button><button class="gallery-dot"></button><button class="gallery-dot"></button><button class="gallery-dot"></button></div>
-        <div class="gallery-counter">1 / 4</div>
+      
+        <div class="gallery-counter">1 / 8</div>
       </div>
       <div class="modal-days-title">Day by Day</div>
       <div class="accordion-item">
@@ -3090,16 +3131,7 @@
       <div class="modal-dates">
         <div class="modal-dates-title">Next Planned Tours</div>
         <div class="date-row">
-          <span class="date-row-range">Apr 6 – Apr 13, 2026</span>
-          <span class="date-badge available">Free Spots</span>
-        </div>
-        <div class="date-row">
-          <span class="date-row-range">Jun 29 – Jul 6, 2026</span>
-          <span class="date-badge available">Free Spots</span>
-        </div>
-        <div class="date-row">
-          <span class="date-row-range">Oct 5 – Oct 12, 2026</span>
-          <span class="date-badge available">Free Spots</span>
+          <span class="date-row-range">No planned tour dates are currently available for this itinerary.</span>
         </div>
       </div>
     <div class="modal-actions">
@@ -4020,9 +4052,6 @@
     { id: 'hl6',     name: 'Cultural & Leisure Experience',          start: '2026-05-04', end: '2026-05-15', status: 'available' },
     { id: 'hl6',     name: 'Cultural & Leisure Experience',          start: '2026-07-06', end: '2026-07-17', status: 'available' },
     { id: 'hl6',     name: 'Cultural & Leisure Experience',          start: '2026-10-19', end: '2026-10-30', status: 'available' },
-    { id: 'turkey1', name: 'Seven Churches of Revelation',           start: '2026-04-06', end: '2026-04-13', status: 'available' },
-    { id: 'turkey1', name: 'Seven Churches of Revelation',           start: '2026-06-29', end: '2026-07-06', status: 'available' },
-    { id: 'turkey1', name: 'Seven Churches of Revelation',           start: '2026-10-05', end: '2026-10-12', status: 'available' },
     { id: 'greece1', name: 'Footsteps of the Apostle Paul',          start: '2026-05-18', end: '2026-05-26', status: 'available' },
     { id: 'greece1', name: 'Footsteps of the Apostle Paul',          start: '2026-07-27', end: '2026-08-04', status: 'full' },
     { id: 'greece1', name: 'Footsteps of the Apostle Paul',          start: '2026-10-12', end: '2026-10-20', status: 'available' },
