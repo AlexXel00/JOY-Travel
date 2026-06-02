@@ -922,9 +922,7 @@
 
     <div class="itin-card" data-section="reformation" onclick="openModal('aut1')">
       <div class="itin-card-img">
-        <div class="itin-card-img-placeholder">
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><path d="M8 40l10-20 8 13 6-8 10 15H8Z" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/><circle cx="34" cy="14" r="4" stroke="#D4962A" stroke-width="1.5"/></svg>
-        </div>
+        <img src="assets/images/the_sound_of_music.jpg" alt="The Sound of Music Original" loading="lazy" />
         <div class="itin-card-badge">Leisure & Culture</div>
       </div>
       <div class="itin-card-body">
@@ -1175,10 +1173,17 @@
 <div class="modal-overlay" id="modal-aut1">
   <div class="modal">
     <div class="modal-hero">
-      <div class="itin-card-img-placeholder" style="height:100%"></div>
+      <img src="assets/images/the_sound_of_music.jpg" alt="The Sound of Music Original" />
       <div class="modal-hero-overlay"></div>
-      <div class="modal-hero-content"><div class="modal-hero-region">Austria · Germany</div><div class="modal-hero-title">The Sound of Music Tour</div></div>
-      <button class="modal-close" onclick="closeModal('aut1')"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 1l12 12M13 1L1 13" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+      <div class="modal-hero-content">
+        <div class="modal-hero-region">Austria · Germany</div>
+        <div class="modal-hero-title">The Sound of Music Tour</div>
+      </div>
+      <button class="modal-close" onclick="closeModal('aut1')">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M1 1l12 12M13 1L1 13" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </button>
     </div>
     <div class="modal-meta">
       <div class="modal-meta-item"><div class="modal-meta-label">Duration</div><div class="modal-meta-value">8 Days</div></div>
@@ -1189,41 +1194,85 @@
       <p class="modal-focus">Salzburg's iconic film locations, the Mondsee wedding church, Hallstatt's lakeside beauty and the alpine landscapes that inspired one of the world's most beloved stories.</p>
       <div class="modal-gallery">
         <div class="gallery-track">
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/salzach.jpg" class="gallery-slide-img" alt="Salzach, Salzburg" />
+            <div class="gallery-caption">Salzach, Salzburg</div>
           </div>
-          <div class="gallery-caption">Mirabell Gardens, Salzburg</div>
-        </div>
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/mirabell_gardens_staircase.jpg" class="gallery-slide-img" alt="Mirabell Gardens Staircase, Salzburg" />
+            <div class="gallery-caption">Mirabell Gardens Staircase, Salzburg</div>
           </div>
-          <div class="gallery-caption">Hellbrunn Palace gazebo</div>
-        </div>
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/the_sound_of_music_staircase.jpg" class="gallery-slide-img" alt="Mirabell Gardens Staircase in the Sound of Music" />
+            <div class="gallery-caption">Mirabell Gardens Staircase in the Sound of Music</div>
           </div>
-          <div class="gallery-caption">Mondsee Basilica</div>
-        </div>
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/leopoldskron_palace.jpg" class="gallery-slide-img" alt="Leopoldskron Palace - Family von Trapp Villa (exteriour), Salzburg Land" />
+            <div class="gallery-caption">Leopoldskron Palace - Family von Trapp Villa (exteriour), Salzburg Land</div>
           </div>
-          <div class="gallery-caption">Hallstatt village on the lake</div>
-        </div>
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/hellbrunn_palace_gardens.jpg" class="gallery-slide-img" alt="Helbrunn Palace Gardens - 16 going on 17" />
+            <div class="gallery-caption">Helbrunn Palace Gardens - 16 going on 17</div>
           </div>
-          <div class="gallery-caption">Königssee, Bavaria</div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/mondsee_basilica.jpg" class="gallery-slide-img" alt="Mondsee Basilica - the Wedding Chruch" />
+            <div class="gallery-caption">Mondsee Basilica - the Wedding Chruch</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/Wolfgangsee.jpg" class="gallery-slide-img" alt="Wolfgangsee, Ried im Innkreis" />
+            <div class="gallery-caption">Wolfgangsee, Ried im Innkreis</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/hallstatt.jpg" class="gallery-slide-img" alt="Hallstatt" />
+            <div class="gallery-caption">Hallstatt</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/brechtesgaden.jpg" class="gallery-slide-img" alt="Brechtesgaden - Part of the Mountain Scenes" />
+            <div class="gallery-caption">Brechtesgaden - Part of the Mountain Scenes</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/the_sound_of_music.jpg" class="gallery-slide-img" alt="The Sound of Music Original" />
+            <div class="gallery-caption">The Sound of Music Original</div>
+          </div>
+      
         </div>
+      
+        <button class="gallery-btn gallery-prev">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+            <path d="M6 2L3 5l3 3" stroke="#1E3F7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      
+        <button class="gallery-btn gallery-next">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+            <path d="M4 2l3 3-3 3" stroke="#1E3F7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      
+        <div class="gallery-dots">
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
         </div>
-        <button class="gallery-btn gallery-prev"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M6 2L3 5l3 3" stroke="#1E3F7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <button class="gallery-btn gallery-next"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M4 2l3 3-3 3" stroke="#1E3F7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <div class="gallery-dots"><button class="gallery-dot"></button><button class="gallery-dot"></button><button class="gallery-dot"></button><button class="gallery-dot"></button><button class="gallery-dot"></button></div>
-        <div class="gallery-counter">1 / 5</div>
+      
+        <div class="gallery-counter">1 / 10</div>
       </div>
       <div class="modal-days-title">Day by Day</div>
       <div class="accordion-item">
@@ -1316,16 +1365,7 @@
       <div class="modal-dates">
         <div class="modal-dates-title">Next Planned Tours</div>
         <div class="date-row">
-          <span class="date-row-range">Jun 15 – Jun 22, 2026</span>
-          <span class="date-badge available">Free Spots</span>
-        </div>
-        <div class="date-row">
-          <span class="date-row-range">Aug 17 – Aug 24, 2026</span>
-          <span class="date-badge full">Fully Booked</span>
-        </div>
-        <div class="date-row">
-          <span class="date-row-range">Sep 28 – Oct 5, 2026</span>
-          <span class="date-badge available">Free Spots</span>
+          <span class="date-row-range">No planned tour dates are currently available for this itinerary.</span>
         </div>
       </div>
     <div class="modal-actions">
