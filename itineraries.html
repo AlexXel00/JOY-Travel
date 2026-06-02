@@ -865,9 +865,7 @@
 
     <div class="itin-card" data-section="egypt" onclick="openModal('egypt2')">
       <div class="itin-card-img">
-        <div class="itin-card-img-placeholder">
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><path d="M8 40l10-20 8 13 6-8 10 15H8Z" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/><circle cx="34" cy="14" r="4" stroke="#D4962A" stroke-width="1.5"/></svg>
-        </div>
+        <img src="assets/images/luxor.jpg" alt="Luxor" loading="lazy" />
         <div class="itin-card-badge">Heritage & Leisure</div>
       </div>
       <div class="itin-card-body">
@@ -3672,10 +3670,17 @@
 <div class="modal-overlay" id="modal-egypt2">
   <div class="modal">
     <div class="modal-hero">
-      <div class="itin-card-img-placeholder" style="height:100%"></div>
+      <img src="assets/images/luxor.jpg" alt="Luxor" />
       <div class="modal-hero-overlay"></div>
-      <div class="modal-hero-content"><div class="modal-hero-region">Cairo · Aswan · Luxor · Red Sea</div><div class="modal-hero-title">Egypt Unveiled</div></div>
-      <button class="modal-close" onclick="closeModal('egypt2')"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 1l12 12M13 1L1 13" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+      <div class="modal-hero-content">
+        <div class="modal-hero-region">Cairo · Abydos · Aswan · Luxor · Red Sea</div>
+        <div class="modal-hero-title">Egypt Unveiled</div>
+      </div>
+      <button class="modal-close" onclick="closeModal('egypt2')">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M1 1l12 12M13 1L1 13" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </button>
     </div>
     <div class="modal-meta">
       <div class="modal-meta-item"><div class="modal-meta-label">Duration</div><div class="modal-meta-value">9 Days</div></div>
@@ -3686,41 +3691,79 @@
       <p class="modal-focus">The great monuments, hidden temple gems and a Nile cruise — combined with evenings at the bazar, a felucca at sunset and days of relaxation at the Red Sea.</p>
       <div class="modal-gallery">
         <div class="gallery-track">
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/pyramids_giza.jpg" class="gallery-slide-img" alt="Pyramids of Giza, Cairo" />
+            <div class="gallery-caption">Pyramids of Giza, Cairo</div>
           </div>
-          <div class="gallery-caption">Khan el-Khalili bazar, Cairo</div>
-        </div>
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/Kahn_el-Khalili_bazar.jpg" class="gallery-slide-img" alt="Kahn el-Khalili Bazar, Cairo" />
+            <div class="gallery-caption">Kahn el-Khalili Bazar, Cairo</div>
           </div>
-          <div class="gallery-caption">Hathor Temple, Dendera</div>
-        </div>
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/cairo.jpg" class="gallery-slide-img" alt="Cairo" />
+            <div class="gallery-caption">Cairo</div>
           </div>
-          <div class="gallery-caption">Felucca on the Nile at sunset</div>
-        </div>
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/felucca_sunset_boat_ride.jpg" class="gallery-slide-img" alt="Felucca Sunset Boat Ride, Cairo" />
+            <div class="gallery-caption">Felucca Sunset Boat Ride, Cairo</div>
           </div>
-          <div class="gallery-caption">Valley of the Kings, Luxor</div>
-        </div>
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/temple_abydos.jpg" class="gallery-slide-img" alt="Temple Abydos" />
+            <div class="gallery-caption">Temple Abydos</div>
           </div>
-          <div class="gallery-caption">Red Sea reef snorkeling</div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/aswan.jpg" class="gallery-slide-img" alt="Aswan" />
+            <div class="gallery-caption">Aswan</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/nile_cruise_kom_obodo.jpg" class="gallery-slide-img" alt="Nile Cruise, Kom Ombo" />
+            <div class="gallery-caption">Nile Cruise, Kom Ombo</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/luxor.jpg" class="gallery-slide-img" alt="Luxor" />
+            <div class="gallery-caption">Luxor</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/red_sea_egypt.jpg" class="gallery-slide-img" alt="Red Sea, Egypt" />
+            <div class="gallery-caption">Red Sea, Egypt</div>
+          </div>
+      
         </div>
+      
+        <button class="gallery-btn gallery-prev">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+            <path d="M6 2L3 5l3 3" stroke="#1E3F7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      
+        <button class="gallery-btn gallery-next">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+            <path d="M4 2l3 3-3 3" stroke="#1E3F7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      
+        <div class="gallery-dots">
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
         </div>
-        <button class="gallery-btn gallery-prev"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M6 2L3 5l3 3" stroke="#1E3F7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <button class="gallery-btn gallery-next"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M4 2l3 3-3 3" stroke="#1E3F7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <div class="gallery-dots"><button class="gallery-dot"></button><button class="gallery-dot"></button><button class="gallery-dot"></button><button class="gallery-dot"></button><button class="gallery-dot"></button></div>
-        <div class="gallery-counter">1 / 5</div>
+      
+        <div class="gallery-counter">1 / 9</div>
       </div>
       <div class="modal-days-title">Day by Day</div>
       <div class="accordion-item">
@@ -3826,16 +3869,7 @@
       <div class="modal-dates">
         <div class="modal-dates-title">Next Planned Tours</div>
         <div class="date-row">
-          <span class="date-row-range">Apr 13 – Apr 21, 2026</span>
-          <span class="date-badge available">Free Spots</span>
-        </div>
-        <div class="date-row">
-          <span class="date-row-range">Jun 8 – Jun 16, 2026</span>
-          <span class="date-badge available">Free Spots</span>
-        </div>
-        <div class="date-row">
-          <span class="date-row-range">Nov 9 – Nov 17, 2026</span>
-          <span class="date-badge available">Free Spots</span>
+          <span class="date-row-range">No planned tour dates are currently available for this itinerary.</span>
         </div>
       </div>
     <div class="modal-actions">
