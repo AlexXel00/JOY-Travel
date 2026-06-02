@@ -890,9 +890,7 @@
 
     <div class="itin-card" data-section="reformation" onclick="openModal('ref1')">
       <div class="itin-card-img">
-        <div class="itin-card-img-placeholder">
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><path d="M8 40l10-20 8 13 6-8 10 15H8Z" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/><circle cx="34" cy="14" r="4" stroke="#D4962A" stroke-width="1.5"/></svg>
-        </div>
+        <img src="assets/images/Hohensalzburg.jpg" alt="Hohensalzburg Fortress, Salzburg" loading="lazy" />
         <div class="itin-card-badge">Heritage</div>
       </div>
       <div class="itin-card-body">
@@ -901,7 +899,7 @@
         <p class="itin-card-focus">Martin Luther, the Protestant Reformation and Europe's Christian heritage — Wittenberg, Eisleben, Leipzig, Erfurt, Salzburg and Vienna.</p>
       </div>
       <div class="itin-card-footer">
-        <span>Berlin · Wittenberg · Vienna</span>
+        <span>Berlin · Wittenberg · Erfurt · Salzburg · Vienna</span>
         <span class="itin-card-cta">View Details <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 4l4 3-4 3" stroke="#D4962A" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
       </div>
     </div>
@@ -3883,10 +3881,17 @@
 <div class="modal-overlay" id="modal-ref1">
   <div class="modal">
     <div class="modal-hero">
-      <div class="itin-card-img-placeholder" style="height:100%"></div>
+      <img src="assets/images/Hohensalzburg.jpg" alt="Hohensalzburg Fortress, Salzburg" />
       <div class="modal-hero-overlay"></div>
-      <div class="modal-hero-content"><div class="modal-hero-region">Germany · Austria</div><div class="modal-hero-title">Reformation Heritage Tour</div></div>
-      <button class="modal-close" onclick="closeModal('ref1')"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 1l12 12M13 1L1 13" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+      <div class="modal-hero-content">
+        <div class="modal-hero-region">Germany · Austria</div>
+        <div class="modal-hero-title">Reformation Heritage Tour</div>
+      </div>
+      <button class="modal-close" onclick="closeModal('ref1')">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M1 1l12 12M13 1L1 13" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </button>
     </div>
     <div class="modal-meta">
       <div class="modal-meta-item"><div class="modal-meta-label">Duration</div><div class="modal-meta-value">9 Days</div></div>
@@ -3897,41 +3902,79 @@
       <p class="modal-focus">Martin Luther, the Protestant Reformation and Europe's Christian heritage — from Wittenberg to Vienna.</p>
       <div class="modal-gallery">
         <div class="gallery-track">
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/brandenburg_gate.jpg" class="gallery-slide-img" alt="Brandenburg Gate, Berlin" />
+            <div class="gallery-caption">Brandenburg Gate, Berlin</div>
           </div>
-          <div class="gallery-caption">Castle Church, Wittenberg</div>
-        </div>
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/wittenberg_luther_house.jpg" class="gallery-slide-img" alt="Luther House, Wittenberg" />
+            <div class="gallery-caption">Luther House, Wittenberg</div>
           </div>
-          <div class="gallery-caption">Luther House, Wittenberg</div>
-        </div>
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/eisleben_church.jpg" class="gallery-slide-img" alt="Local Church of Luther, Eisleben" />
+            <div class="gallery-caption">Local Church of Luther, Eisleben</div>
           </div>
-          <div class="gallery-caption">St. Thomas Church, Leipzig</div>
-        </div>
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/Leipzig_st_thomas_church.jpg" class="gallery-slide-img" alt="St. Thomas Church, Leipzig" />
+            <div class="gallery-caption">St. Thomas Church, Leipzig</div>
           </div>
-          <div class="gallery-caption">Erfurt Cathedral</div>
-        </div>
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/erfurt_cathedral.jpg" class="gallery-slide-img" alt="Erfurt Cathedral" />
+            <div class="gallery-caption">Erfurt Cathedral</div>
           </div>
-          <div class="gallery-caption">St. Stephen's Cathedral, Vienna</div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/Hohensalzburg.jpg" class="gallery-slide-img" alt="Hohensalzburg Fortress, Salzburg" />
+            <div class="gallery-caption">Hohensalzburg Fortress, Salzburg</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/salzburg_mirabell_gardens.jpg" class="gallery-slide-img" alt="Mirabell Gardens, Salzburg" />
+            <div class="gallery-caption">Mirabell Gardens, Salzburg</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/vienna_st_stephens_cathedral.jpg" class="gallery-slide-img" alt="St. Stephens Cathedral, Vienna" />
+            <div class="gallery-caption">St. Stephens Cathedral, Vienna</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/vienna_hofburg_palace.jpg" class="gallery-slide-img" alt="Hofburg Palace, Vienna" />
+            <div class="gallery-caption">Hofburg Palace, Vienna</div>
+          </div>
+      
         </div>
+      
+        <button class="gallery-btn gallery-prev">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+            <path d="M6 2L3 5l3 3" stroke="#1E3F7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      
+        <button class="gallery-btn gallery-next">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+            <path d="M4 2l3 3-3 3" stroke="#1E3F7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      
+        <div class="gallery-dots">
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
         </div>
-        <button class="gallery-btn gallery-prev"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M6 2L3 5l3 3" stroke="#1E3F7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <button class="gallery-btn gallery-next"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M4 2l3 3-3 3" stroke="#1E3F7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <div class="gallery-dots"><button class="gallery-dot"></button><button class="gallery-dot"></button><button class="gallery-dot"></button><button class="gallery-dot"></button><button class="gallery-dot"></button></div>
-        <div class="gallery-counter">1 / 5</div>
+      
+        <div class="gallery-counter">1 / 9</div>
       </div>
       <div class="modal-days-title">Day by Day</div>
       <div class="accordion-item">
@@ -4001,16 +4044,7 @@
       <div class="modal-dates">
         <div class="modal-dates-title">Next Planned Tours</div>
         <div class="date-row">
-          <span class="date-row-range">May 4 – May 12, 2026</span>
-          <span class="date-badge available">Free Spots</span>
-        </div>
-        <div class="date-row">
-          <span class="date-row-range">Aug 10 – Aug 18, 2026</span>
-          <span class="date-badge available">Free Spots</span>
-        </div>
-        <div class="date-row">
-          <span class="date-row-range">Oct 5 – Oct 13, 2026</span>
-          <span class="date-badge full">Fully Booked</span>
+          <span class="date-row-range">No planned tour dates are currently available for this itinerary.</span>
         </div>
       </div>
     <div class="modal-actions">
@@ -4166,12 +4200,6 @@
     { id: 'hl6',     name: 'Cultural & Leisure Experience',          start: '2026-05-04', end: '2026-05-15', status: 'available' },
     { id: 'hl6',     name: 'Cultural & Leisure Experience',          start: '2026-07-06', end: '2026-07-17', status: 'available' },
     { id: 'hl6',     name: 'Cultural & Leisure Experience',          start: '2026-10-19', end: '2026-10-30', status: 'available' },
-    { id: 'ref1',    name: 'Reformation Heritage Tour',              start: '2026-05-04', end: '2026-05-12', status: 'available' },
-    { id: 'ref1',    name: 'Reformation Heritage Tour',              start: '2026-08-10', end: '2026-08-18', status: 'available' },
-    { id: 'ref1',    name: 'Reformation Heritage Tour',              start: '2026-10-05', end: '2026-10-13', status: 'full' },
-    { id: 'ger2',    name: 'Remembrance & History',                  start: '2026-05-18', end: '2026-05-27', status: 'available' },
-    { id: 'ger2',    name: 'Remembrance & History',                  start: '2026-08-24', end: '2026-09-02', status: 'available' },
-    { id: 'ger2',    name: 'Remembrance & History',                  start: '2026-10-19', end: '2026-10-28', status: 'available' },
     { id: 'aut1',    name: 'The Sound of Music Tour',                start: '2026-06-15', end: '2026-06-22', status: 'available' },
     { id: 'aut1',    name: 'The Sound of Music Tour',                start: '2026-08-17', end: '2026-08-24', status: 'full' },
     { id: 'aut1',    name: 'The Sound of Music Tour',                start: '2026-09-28', end: '2026-10-05', status: 'available' },
