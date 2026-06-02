@@ -906,9 +906,7 @@
 
     <div class="itin-card" data-section="reformation" onclick="openModal('ger2')">
       <div class="itin-card-img">
-        <div class="itin-card-img-placeholder">
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><path d="M8 40l10-20 8 13 6-8 10 15H8Z" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/><circle cx="34" cy="14" r="4" stroke="#D4962A" stroke-width="1.5"/></svg>
-        </div>
+        <img src="assets/images/holocaust_memorial_berlin.jpg" alt="Holocaust Memorial, Berlin" loading="lazy" />
         <div class="itin-card-badge">History & Remembrance</div>
       </div>
       <div class="itin-card-body">
@@ -1341,10 +1339,17 @@
 <div class="modal-overlay" id="modal-ger2">
   <div class="modal">
     <div class="modal-hero">
-      <div class="itin-card-img-placeholder" style="height:100%"></div>
+      <img src="assets/images/holocaust_memorial_berlin.jpg" alt="Holocaust Memorial, Berlin" />
       <div class="modal-hero-overlay"></div>
-      <div class="modal-hero-content"><div class="modal-hero-region">Germany · Austria</div><div class="modal-hero-title">Remembrance & History</div></div>
-      <button class="modal-close" onclick="closeModal('ger2')"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 1l12 12M13 1L1 13" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+      <div class="modal-hero-content">
+        <div class="modal-hero-region">Germany · Austria</div>
+        <div class="modal-hero-title">Remembrance &amp; History</div>
+      </div>
+      <button class="modal-close" onclick="closeModal('ger2')">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M1 1l12 12M13 1L1 13" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </button>
     </div>
     <div class="modal-meta">
       <div class="modal-meta-item"><div class="modal-meta-label">Duration</div><div class="modal-meta-value">10 Days</div></div>
@@ -1355,41 +1360,91 @@
       <p class="modal-focus">A meaningful journey through the history of Jewish life and persecution in Germany and Austria — tracing both the rich culture that existed before 1933 and the devastating events that followed.</p>
       <div class="modal-gallery">
         <div class="gallery-track">
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/berlin_scheunenviertel.jpg" class="gallery-slide-img" alt="Scheunenviertel, Berlin" />
+            <div class="gallery-caption">Scheunenviertel, Berlin</div>
           </div>
-          <div class="gallery-caption">Holocaust Memorial, Berlin</div>
-        </div>
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/neue_synagoge_berlin.jpg" class="gallery-slide-img" alt="Neue Synagoge, Berlin" />
+            <div class="gallery-caption">Neue Synagoge, Berlin</div>
           </div>
-          <div class="gallery-caption">Jewish Museum Berlin</div>
-        </div>
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/holocaust_memorial_berlin.jpg" class="gallery-slide-img" alt="Holocaust Memorial, Berlin" />
+            <div class="gallery-caption">Holocaust Memorial, Berlin</div>
           </div>
-          <div class="gallery-caption">Sachsenhausen memorial</div>
-        </div>
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/house_of_wannsee_conference.jpg" class="gallery-slide-img" alt="House of Wannsee Conference" />
+            <div class="gallery-caption">House of Wannsee Conference</div>
           </div>
-          <div class="gallery-caption">Buchenwald memorial</div>
-        </div>
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/weimar.jpg" class="gallery-slide-img" alt="Weimar" />
+            <div class="gallery-caption">Weimar</div>
           </div>
-          <div class="gallery-caption">Judenplatz Memorial, Vienna</div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/buchenwald_concentration_camp.jpg" class="gallery-slide-img" alt="Buchenwald Concentration Camp" />
+            <div class="gallery-caption">Buchenwald Concentration Camp</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/liberation_of_the_buchenwald_concentration_camp_1945.jpg" class="gallery-slide-img" alt="Liberation of the Buchenwald Concentration Camp 1945" />
+            <div class="gallery-caption">Liberation of the Buchenwald Concentration Camp 1945</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/documentation_centre_nuremberg.jpg" class="gallery-slide-img" alt="Documentation Centre, Nuremberg" />
+            <div class="gallery-caption">Documentation Centre, Nuremberg</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/jewish_centre_munich.jpg" class="gallery-slide-img" alt="Jewish Centre, Munich" />
+            <div class="gallery-caption">Jewish Centre, Munich</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/dachau_concentration_camp_memorial.jpg" class="gallery-slide-img" alt="Dachau Concentration Camp Memorial" />
+            <div class="gallery-caption">Dachau Concentration Camp Memorial</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/judenplatz_memorial_vienna.jpg" class="gallery-slide-img" alt="Judenplatz Memorial, Vienna" />
+            <div class="gallery-caption">Judenplatz Memorial, Vienna</div>
+          </div>
+      
         </div>
+      
+        <button class="gallery-btn gallery-prev">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+            <path d="M6 2L3 5l3 3" stroke="#1E3F7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      
+        <button class="gallery-btn gallery-next">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+            <path d="M4 2l3 3-3 3" stroke="#1E3F7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      
+        <div class="gallery-dots">
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
         </div>
-        <button class="gallery-btn gallery-prev"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M6 2L3 5l3 3" stroke="#1E3F7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <button class="gallery-btn gallery-next"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M4 2l3 3-3 3" stroke="#1E3F7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <div class="gallery-dots"><button class="gallery-dot"></button><button class="gallery-dot"></button><button class="gallery-dot"></button><button class="gallery-dot"></button><button class="gallery-dot"></button></div>
-        <div class="gallery-counter">1 / 5</div>
+      
+        <div class="gallery-counter">1 / 11</div>
       </div>
       <div class="modal-days-title">Day by Day</div>
       <div class="accordion-item">
@@ -1504,16 +1559,7 @@
       <div class="modal-dates">
         <div class="modal-dates-title">Next Planned Tours</div>
         <div class="date-row">
-          <span class="date-row-range">May 18 – May 27, 2026</span>
-          <span class="date-badge available">Free Spots</span>
-        </div>
-        <div class="date-row">
-          <span class="date-row-range">Aug 24 – Sep 2, 2026</span>
-          <span class="date-badge available">Free Spots</span>
-        </div>
-        <div class="date-row">
-          <span class="date-row-range">Oct 19 – Oct 28, 2026</span>
-          <span class="date-badge available">Free Spots</span>
+          <span class="date-row-range">No planned tour dates are currently available for this itinerary.</span>
         </div>
       </div>
     <div class="modal-actions">
