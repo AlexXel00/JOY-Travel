@@ -806,9 +806,7 @@
 
     <div class="itin-card" data-section="greece" onclick="openModal('greece2')">
       <div class="itin-card-img">
-        <div class="itin-card-img-placeholder">
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><path d="M8 40l10-20 8 13 6-8 10 15H8Z" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/><circle cx="34" cy="14" r="4" stroke="#D4962A" stroke-width="1.5"/></svg>
-        </div>
+        <img src="assets/images/santorini.jpg" alt="Santorini" loading="lazy" />
         <div class="itin-card-badge">Culture & Leisure</div>
       </div>
       <div class="itin-card-body">
@@ -3145,13 +3143,19 @@
 
 <!-- GREECE 2 -->
 <div class="modal-overlay" id="modal-greece2">
-  <div class="modal">
-    <div class="modal-hero">
-      <div class="itin-card-img-placeholder" style="height:100%"></div>
-      <div class="modal-hero-overlay"></div>
-      <div class="modal-hero-content"><div class="modal-hero-region">Athens · Santorini · Mykonos</div><div class="modal-hero-title">Greece — Culture, Sun & the Aegean</div></div>
-      <button class="modal-close" onclick="closeModal('greece2')"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 1l12 12M13 1L1 13" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+  <div class="modal-hero">
+    <img src="assets/images/santorini.jpg" alt="Santorini" />
+    <div class="modal-hero-overlay"></div>
+    <div class="modal-hero-content">
+      <div class="modal-hero-region">Athens · Santorini · Mykonos</div>
+      <div class="modal-hero-title">Greece — Culture, Sun & the Aegean</div>
     </div>
+    <button class="modal-close" onclick="closeModal('greece2')">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+        <path d="M1 1l12 12M13 1L1 13" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </div>
     <div class="modal-meta">
       <div class="modal-meta-item"><div class="modal-meta-label">Duration</div><div class="modal-meta-value">9 Days</div></div>
       <div class="modal-meta-item"><div class="modal-meta-label">Style</div><div class="modal-meta-value">Culture & Leisure</div></div>
@@ -3161,41 +3165,73 @@
       <p class="modal-focus">Athens' ancient wonders, Santorini's dramatic caldera sunsets and Mykonos' golden beaches — the classic Greek experience done beautifully.</p>
       <div class="modal-gallery">
         <div class="gallery-track">
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/acropolis.jpg" class="gallery-slide-img" alt="Acropolis, Athens" />
+            <div class="gallery-caption">Acropolis, Athens</div>
           </div>
-          <div class="gallery-caption">Acropolis at sunset, Athens</div>
-        </div>
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/changing_of_guards_syntagma_square.jpg" class="gallery-slide-img" alt="Changing of Guards at the Syntagma Square, Athens" />
+            <div class="gallery-caption">Changing of Guards at the Syntagma Square, Athens</div>
           </div>
-          <div class="gallery-caption">Oia village, Santorini</div>
-        </div>
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/greek_mezze.jpg" class="gallery-slide-img" alt="Typical Greek Mezze" />
+            <div class="gallery-caption">Typical Greek Mezze</div>
           </div>
-          <div class="gallery-caption">Caldera view, Santorini</div>
-        </div>
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/santorini.jpg" class="gallery-slide-img" alt="Santorini" />
+            <div class="gallery-caption">Santorini</div>
           </div>
-          <div class="gallery-caption">Mykonos windmills</div>
-        </div>
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/oia_village.jpg" class="gallery-slide-img" alt="Famous Oia Village, Santorini" />
+            <div class="gallery-caption">Famous Oia Village, Santorini</div>
           </div>
-          <div class="gallery-caption">Little Venice, Mykonos</div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/black_sand_beach_perissa.jpg" class="gallery-slide-img" alt="Black Sand Beach, Perissa" />
+            <div class="gallery-caption">Black Sand Beach, Perissa</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/mykonos.jpg" class="gallery-slide-img" alt="Mykonos" />
+            <div class="gallery-caption">Mykonos</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/chora_mykonos.jpg" class="gallery-slide-img" alt="Chora Village, Mykonos" />
+            <div class="gallery-caption">Chora Village, Mykonos</div>
+          </div>
+      
         </div>
+      
+        <button class="gallery-btn gallery-prev">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+            <path d="M6 2L3 5l3 3" stroke="#1E3F7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      
+        <button class="gallery-btn gallery-next">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+            <path d="M4 2l3 3-3 3" stroke="#1E3F7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      
+        <div class="gallery-dots">
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
         </div>
-        <button class="gallery-btn gallery-prev"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M6 2L3 5l3 3" stroke="#1E3F7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <button class="gallery-btn gallery-next"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M4 2l3 3-3 3" stroke="#1E3F7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <div class="gallery-dots"><button class="gallery-dot"></button><button class="gallery-dot"></button><button class="gallery-dot"></button><button class="gallery-dot"></button><button class="gallery-dot"></button></div>
-        <div class="gallery-counter">1 / 5</div>
+      
+        <div class="gallery-counter">1 / 8</div>
       </div>
       <div class="modal-days-title">Day by Day</div>
       <div class="accordion-item">
@@ -3302,16 +3338,7 @@
       <div class="modal-dates">
         <div class="modal-dates-title">Next Planned Tours</div>
         <div class="date-row">
-          <span class="date-row-range">Jun 1 – Jun 9, 2026</span>
-          <span class="date-badge available">Free Spots</span>
-        </div>
-        <div class="date-row">
-          <span class="date-row-range">Aug 3 – Aug 11, 2026</span>
-          <span class="date-badge full">Fully Booked</span>
-        </div>
-        <div class="date-row">
-          <span class="date-row-range">Sep 21 – Sep 29, 2026</span>
-          <span class="date-badge available">Free Spots</span>
+          <span class="date-row-range">No planned tour dates are currently available for this itinerary.</span>
         </div>
       </div>
     <div class="modal-actions">
@@ -4054,12 +4081,6 @@
     { id: 'hl6',     name: 'Cultural & Leisure Experience',          start: '2026-05-04', end: '2026-05-15', status: 'available' },
     { id: 'hl6',     name: 'Cultural & Leisure Experience',          start: '2026-07-06', end: '2026-07-17', status: 'available' },
     { id: 'hl6',     name: 'Cultural & Leisure Experience',          start: '2026-10-19', end: '2026-10-30', status: 'available' },
-    { id: 'greece1', name: 'Footsteps of the Apostle Paul',          start: '2026-05-18', end: '2026-05-26', status: 'available' },
-    { id: 'greece1', name: 'Footsteps of the Apostle Paul',          start: '2026-07-27', end: '2026-08-04', status: 'full' },
-    { id: 'greece1', name: 'Footsteps of the Apostle Paul',          start: '2026-10-12', end: '2026-10-20', status: 'available' },
-    { id: 'greece2', name: 'Greece — Culture, Sun & the Aegean',     start: '2026-06-01', end: '2026-06-09', status: 'available' },
-    { id: 'greece2', name: 'Greece — Culture, Sun & the Aegean',     start: '2026-08-03', end: '2026-08-11', status: 'full' },
-    { id: 'greece2', name: 'Greece — Culture, Sun & the Aegean',     start: '2026-09-21', end: '2026-09-29', status: 'available' },
     { id: 'egypt1',  name: 'Egypt Biblical & Cultural Tour',         start: '2026-03-09', end: '2026-03-17', status: 'full' },
     { id: 'egypt1',  name: 'Egypt Biblical & Cultural Tour',         start: '2026-05-25', end: '2026-06-02', status: 'available' },
     { id: 'egypt1',  name: 'Egypt Biblical & Cultural Tour',         start: '2026-11-02', end: '2026-11-10', status: 'available' },
