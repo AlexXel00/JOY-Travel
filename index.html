@@ -399,20 +399,7 @@
       .trust-strip { gap: 20px; }
     }
   
-    #holy-land-card .slide {
-      position: absolute; inset: 0;
-      width: 100%; height: 100%; object-fit: cover;
-      opacity: 0; transition: opacity 1s ease-in-out;
-    }
-    #holy-land-card .slide.active { opacity: 1; }
-    #holy-land-card { position: relative; height: 560px; }
-    #egypt-card .slide { position: absolute; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100% !important; object-fit: cover; opacity: 0; transition: opacity 1s ease-in-out; }
-    #egypt-card .slide.active { opacity: 1; }
-    #egypt-card { position: relative; height: 270px; }
-    @media (max-width: 1024px) {
-      #holy-land-card { height: 380px; }
-      #egypt-card { height: 270px; }
-    }
+   
 /* HERO LEFT POSITION FIX */
 .hero-left {
   position: relative;
@@ -837,22 +824,6 @@
     });
   }
 
-  // Slideshow
-  function initSlideshow(cardId, intervalMs) {
-    var card = document.getElementById(cardId);
-    if (!card) return;
-    var slides = card.querySelectorAll('.slide');
-    if (slides.length < 2) return;
-    var current = 0;
-    setInterval(function() {
-      slides[current].classList.remove('active');
-      current = (current + 1) % slides.length;
-      slides[current].classList.add('active');
-    }, intervalMs);
-  }
-
-  initSlideshow('holy-land-card', 3500);
-  initSlideshow('egypt-card', 4000);
 </script>
 </body>
 </html>
