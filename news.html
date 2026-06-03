@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <title>News – JOY Tours</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --gold:       #D4962A;
+      --gold-light: #E8A827;
+      --gold-pale:  #F5D9A0;
+      --gold-wash:  #FDF6E8;
+      --teal:       #2E809B;
+      --teal-dark:  #256d85;
+      --navy:       #1E3F7A;
+      --navy-dark:  #1A2E50;
+      --cream:      #FAF6EE;
+      --cream-mid:  #F0E9D8;
+      --cream-dark: #E2D5BE;
+      --text:       #1E3F7A;
+      --text-mid:   #2E5299;
+      --text-light: #6B89B8;
+      --white:      #FFFFFF;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Jost', sans-serif;
+      color: var(--text);
+      background: var(--cream);
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(250,246,238,0.97);
+      border-bottom: 1px solid var(--cream-dark);
+      padding: 0 6%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 88px;
+      backdrop-filter: blur(10px);
+    }
+
+    .nav-logo {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-logo img {
+      height: 78px;
+      width: auto;
+      display: block;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      align-items: center;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 400;
+      color: var(--text-mid);
+      letter-spacing: 0.5px;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--gold);
+    }
+
+    .nav-cta {
+      background: var(--gold) !important;
+      color: var(--white) !important;
+      padding: 9px 22px;
+      border-radius: 3px;
+      font-weight: 500 !important;
+      letter-spacing: 1px !important;
+    }
+
+    .nav-cta:hover {
+      background: var(--gold-light) !important;
+    }
+
+    .nav-burger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+    }
+
+    .nav-burger span {
+      display: block;
+      width: 22px;
+      height: 1.5px;
+      background: var(--text);
+    }
+
+    .news-hero {
+      padding: 168px 6% 72px;
+      background: var(--cream);
+      border-bottom: 1px solid var(--cream-dark);
+    }
+
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .eyebrow-line {
+      width: 28px;
+      height: 1px;
+      background: var(--gold);
+    }
+
+    .eyebrow span {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    .news-hero h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(44px, 5.2vw, 76px);
+      line-height: 1.04;
+      font-weight: 600;
+      color: var(--text);
+      max-width: 850px;
+      margin-bottom: 22px;
+    }
+
+    .news-hero h1 em {
+      font-style: italic;
+      color: var(--gold);
+    }
+
+    .news-hero p {
+      font-size: 16px;
+      line-height: 1.9;
+      font-weight: 300;
+      color: var(--text-mid);
+      max-width: 690px;
+    }
+
+    .news-section {
+      padding: 72px 6% 104px;
+      background: var(--cream);
+    }
+
+    .news-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 320px;
+      gap: 44px;
+      align-items: start;
+    }
+
+    .pinned-post {
+      background: var(--white);
+      border: 1px solid var(--cream-dark);
+      border-radius: 18px;
+      box-shadow: 0 24px 70px rgba(30, 63, 122, 0.08);
+      overflow: hidden;
+    }
+
+    .post-header {
+      background:
+        linear-gradient(135deg, rgba(212,150,42,0.12), rgba(46,128,155,0.08)),
+        var(--white);
+      border-bottom: 1px solid var(--cream-dark);
+      padding: clamp(30px, 4vw, 56px);
+    }
+
+    .post-badges {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .post-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 7px 12px;
+      border-radius: 999px;
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .post-badge.pinned {
+      background: var(--gold);
+      color: var(--white);
+    }
+
+    .post-badge.category {
+      background: var(--gold-wash);
+      color: var(--gold);
+      border: 1px solid var(--cream-dark);
+    }
+
+    .post-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(36px, 4.4vw, 64px);
+      line-height: 1.04;
+      font-weight: 600;
+      color: var(--text);
+      max-width: 980px;
+      margin-bottom: 18px;
+    }
+
+    .post-meta {
+      color: var(--text-light);
+      font-size: 13px;
+      line-height: 1.7;
+      font-weight: 300;
+    }
+
+    .post-content {
+      padding: clamp(30px, 4vw, 56px);
+    }
+
+    .post-content h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(28px, 3vw, 42px);
+      line-height: 1.12;
+      font-weight: 600;
+      color: var(--text);
+      margin: 42px 0 16px;
+    }
+
+    .post-content h2:first-child {
+      margin-top: 0;
+    }
+
+    .post-content p {
+      color: var(--text-mid);
+      font-size: 15.5px;
+      font-weight: 300;
+      line-height: 1.95;
+      margin-bottom: 18px;
+    }
+
+    .post-content strong {
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    .post-note {
+      background: var(--gold-wash);
+      border-left: 3px solid var(--gold);
+      padding: 20px 22px;
+      margin: 30px 0;
+      color: var(--text-mid);
+      font-size: 14px;
+      line-height: 1.8;
+      font-weight: 300;
+    }
+
+    .official-sources {
+      margin-top: 44px;
+      padding-top: 30px;
+      border-top: 1px solid var(--cream-dark);
+    }
+
+    .official-sources h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 28px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 16px;
+    }
+
+    .source-list {
+      display: grid;
+      gap: 10px;
+      list-style: none;
+    }
+
+    .source-list a {
+      color: var(--text);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(212,150,42,0.55);
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .news-sidebar {
+      position: sticky;
+      top: 112px;
+      display: grid;
+      gap: 22px;
+    }
+
+    .sidebar-card {
+      background: var(--white);
+      border: 1px solid var(--cream-dark);
+      border-radius: 14px;
+      padding: 26px;
+      box-shadow: 0 18px 45px rgba(30, 63, 122, 0.06);
+    }
+
+    .sidebar-card h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 28px;
+      line-height: 1.12;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 12px;
+    }
+
+    .sidebar-card p {
+      color: var(--text-mid);
+      font-size: 14px;
+      line-height: 1.8;
+      font-weight: 300;
+      margin-bottom: 16px;
+    }
+
+    .sidebar-card a {
+      color: var(--text);
+      text-decoration: none;
+      border-bottom: 1px solid var(--gold);
+      font-size: 13px;
+    }
+
+    .latest-section {
+      margin-top: 54px;
+      background: var(--white);
+      border: 1px solid var(--cream-dark);
+      border-radius: 18px;
+      padding: clamp(28px, 4vw, 44px);
+    }
+
+    .latest-section h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(32px, 3.4vw, 48px);
+      line-height: 1.1;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 16px;
+    }
+
+    .empty-news {
+      color: var(--text-mid);
+      font-size: 15px;
+      line-height: 1.8;
+      font-weight: 300;
+      padding-top: 6px;
+    }
+
+    .news-template-note {
+      margin-top: 24px;
+      padding: 18px 20px;
+      background: var(--cream);
+      border: 1px dashed var(--cream-dark);
+      border-radius: 8px;
+      color: var(--text-light);
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
+    footer {
+      background: #2E809B;
+      color: rgba(250,246,238,0.6);
+      padding: 72px 6% 32px;
+    }
+
+    .footer-top {
+      display: grid;
+      grid-template-columns: 1.8fr 1fr 1fr 1fr;
+      gap: 48px;
+      padding-bottom: 56px;
+      border-bottom: 1px solid rgba(250,246,238,0.08);
+      margin-bottom: 32px;
+    }
+
+    .footer-logo {
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .footer-logo img {
+      height: 54px;
+      width: auto;
+      display: block;
+    }
+
+    .footer-tagline {
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 1.8;
+      color: rgba(250,246,238,0.4);
+      margin-top: 20px;
+      max-width: 240px;
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 10px;
+      margin-top: 24px;
+    }
+
+    .footer-social a {
+      width: 34px;
+      height: 34px;
+      border-radius: 3px;
+      border: 1px solid rgba(250,246,238,0.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(250,246,238,0.4);
+      text-decoration: none;
+      font-size: 12px;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .footer-social a:hover {
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+
+    .footer-col h4 {
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: rgba(250,246,238,0.9);
+      margin-bottom: 20px;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-col ul li a {
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 300;
+      color: rgba(250,246,238,0.4);
+      transition: color 0.2s;
+    }
+
+    .footer-col ul li a:hover {
+      color: var(--gold-light);
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+    }
+
+    @media (max-width: 1080px) {
+      .news-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .news-sidebar {
+        position: static;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .footer-top {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 720px) {
+      nav {
+        height: 78px;
+      }
+
+      .nav-logo img {
+        height: 68px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .nav-burger {
+        display: flex;
+      }
+
+      .news-hero {
+        padding-top: 138px;
+      }
+
+      .news-sidebar {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-top {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        gap: 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="index.html" class="nav-logo" aria-label="JOY Tours Home">
+      <img src="assets/images/assets/logo/joy-tours-logo.png" alt="JOY Tours logo" />
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="itineraries.html">Itineraries</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Travel Stories</a></li>
+      <li><a href="news.html" class="active">News</a></li>
+      <li><a href="contact.html" class="nav-cta">Plan My Trip</a></li>
+    </ul>
+
+    <div class="nav-burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <main>
+    <section class="news-hero">
+      <div class="eyebrow">
+        <div class="eyebrow-line"></div>
+        <span>JOY Tours News</span>
+      </div>
+
+      <h1>Updates, travel notes & practical <em>guides</em>.</h1>
+
+      <p>
+        Important announcements, destination updates, travel preparation notes and practical information for guests preparing for a JOY Tours journey.
+      </p>
+    </section>
+
+    <section class="news-section">
+      <div class="news-layout">
+        <div>
+          <article class="pinned-post" id="visa-guide-us-citizens">
+            <header class="post-header">
+              <div class="post-badges">
+                <span class="post-badge pinned">Pinned Guide</span>
+                <span class="post-badge category">Visa Information</span>
+              </div>
+
+              <h2 class="post-title">Your Passport to the World: Visa Guide for U.S. Citizens Traveling with JOY Tours</h2>
+
+              <div class="post-meta">
+                Last updated: June 2026 · For U.S. passport holders · Please verify requirements before travel
+              </div>
+            </header>
+
+            <div class="post-content">
+              <p>
+                One of the most common questions we hear from travelers before their trip is: <strong>"Do I need a visa?"</strong> The answer depends on where you're going — and the details can change from year to year. To make your journey as smooth and stress-free as possible, we've put together this practical guide covering every destination in our JOY Tours portfolio.
+              </p>
+
+              <div class="post-note">
+                This guide is intended as a practical overview, not legal advice. Visa rules, entry requirements and security conditions may change. Always check official government sources and contact your nearest embassy or consulate for the most current requirements before you travel.
+              </div>
+
+              <h2>Israel and the Palestinian Territories</h2>
+
+              <p>
+                The Holy Land is the heart of what JOY Tours does, and getting there as a U.S. citizen is more straightforward than many people expect — though the rules have recently changed.
+              </p>
+
+              <p>
+                As of January 1, 2025, U.S. citizens must have an approved Electronic Travel Authorization, known as <strong>ETA-IL</strong>, to enter Israel for tourism or business purposes for stays of up to 90 days. The authorization is valid for up to two years, or until the passport expires, and allows multiple entries, with each stay limited to 90 days.
+              </p>
+
+              <p>
+                The application is completed online using a valid passport, an email address and a payment method. Travelers should complete the application before boarding their flight. Approval is often received quickly, but we recommend applying well in advance of your departure.
+              </p>
+
+              <p>
+                Israel typically does not stamp American passports. Instead, travelers usually receive an entry card upon arrival. Keep this card safe, as it may be needed during your stay.
+              </p>
+
+              <p>
+                Regarding the Palestinian Territories: Palestine has no independent visa policy for travelers entering through Israel. Visits to destinations such as Bethlehem and Jericho are generally accessed through Israeli-controlled checkpoints. You should carry your passport and entry documentation with you when moving through checkpoints.
+              </p>
+
+              <p>
+                Please note that the security situation in the region can change. We strongly recommend checking the latest U.S. Department of State travel advisory before your trip.
+              </p>
+
+              <h2>Egypt</h2>
+
+              <p>
+                Egypt — land of the Pyramids, the Nile and some of the most awe-inspiring ancient history on earth — requires a visa for U.S. citizens, but obtaining one is usually straightforward.
+              </p>
+
+              <p>
+                U.S. citizens have multiple options: a visa on arrival at major Egyptian airports, or an e-Visa applied for online in advance. Your passport should be valid for at least six months beyond your planned entry date, and at least one blank page is recommended for the visa stamp.
+              </p>
+
+              <p>
+                Current U.S. government guidance notes that a renewable single-entry 30-day tourist visa on arrival is available at Egyptian airports for approximately <strong>$30 USD</strong> in exact cash. A multiple-entry visa costs approximately <strong>$60 USD</strong>. Egypt also offers an official e-Visa system for travelers who prefer to apply online before departure.
+              </p>
+
+              <p>
+                The e-Visa option is often recommended because it can reduce waiting time at arrival. Apply only through the official Egyptian e-Visa portal and avoid third-party websites charging unnecessary additional fees.
+              </p>
+
+              <p>
+                Travelers visiting only the South Sinai resort areas — including Sharm el-Sheikh, Dahab, Nuweiba and Taba — for short stays may be eligible for a free entry permission stamp. However, if your JOY Tours itinerary includes Cairo, Luxor or destinations beyond that area, the standard visa applies.
+              </p>
+
+              <h2>Italy</h2>
+
+              <p>
+                Italy is a dream destination — its ancient churches, sacred art and millennia of layered history make it a centerpiece of many JOY Tours itineraries. The good news for American travelers is that entry is currently simple.
+              </p>
+
+              <p>
+                U.S. citizens can visit Italy and the wider Schengen area for up to 90 days within any 180-day period without a traditional visa. You need a valid U.S. passport and must comply with standard Schengen entry conditions.
+              </p>
+
+              <p>
+                There is an important upcoming change: the European Travel Information and Authorization System, known as <strong>ETIAS</strong>, is expected to start operations in the last quarter of 2026. Once active, Americans and other visa-exempt travelers will be required to complete a brief online travel authorization before visiting Italy or other participating European countries.
+              </p>
+
+              <p>
+                The application fee will be €20 for most adult travelers. ETIAS is not a traditional visa, but it will become a required pre-travel authorization once launched.
+              </p>
+
+              <h2>Greece</h2>
+
+              <p>
+                Greece — where ancient temples meet turquoise waters, and where the roots of Western civilization run deep beneath every hillside — is equally welcoming to American visitors.
+              </p>
+
+              <p>
+                Like Italy, Greece is part of the Schengen area. U.S. citizens can currently enter visa-free for stays of up to 90 days within any 180-day period, provided they meet standard entry conditions.
+              </p>
+
+              <p>
+                The upcoming ETIAS requirement will also apply to Greece once the system launches. Until then, entry remains straightforward with a valid passport.
+              </p>
+
+              <h2>Austria</h2>
+
+              <p>
+                Austria holds a special place in the story of European Christianity — its grand cathedrals, historic monasteries and Baroque churches draw visitors from around the world. For U.S. citizens, visiting is currently hassle-free.
+              </p>
+
+              <p>
+                Austria is part of the Schengen area, and U.S. passport holders can enter visa-free for up to 90 days within any 180-day period under current rules.
+              </p>
+
+              <p>
+                The forthcoming ETIAS system will apply to Austria once it launches. Until that date, Americans traveling for short tourism stays generally do not need a traditional visa.
+              </p>
+
+              <h2>Germany</h2>
+
+              <p>
+                Germany — from the soaring Gothic cathedrals of Cologne to the Reformation history of Wittenberg — is another destination that requires minimal paperwork for American travelers.
+              </p>
+
+              <p>
+                Germany is also part of the Schengen area, granting U.S. citizens visa-free entry for up to 90 days within any 180-day period for short tourism stays.
+              </p>
+
+              <p>
+                Germany will also be included in the upcoming ETIAS requirement. Once the system is active, U.S. travelers will need to complete online authorization before travel.
+              </p>
+
+              <h2>A Few Tips for Every Trip</h2>
+
+              <p>
+                Wherever your JOY Tours journey takes you, a few universal practices will help ensure smooth travels.
+              </p>
+
+              <p>
+                Check your passport expiration date well in advance. Many destinations and airlines expect at least six months of remaining passport validity beyond your travel dates. Always carry printed or downloaded copies of any electronic authorizations, including ETA-IL for Israel and e-Visas for Egypt.
+              </p>
+
+              <p>
+                Monitor travel advisories through official government sources, particularly for destinations where security or entry conditions can change. And if you have any questions about documentation specific to your trip, the JOY Tours team is always here to help you prepare.
+              </p>
+
+              <p>
+                <strong>The world is waiting — let us help you get there.</strong>
+              </p>
+
+              <div class="official-sources">
+                <h3>Official sources to check before travel</h3>
+
+                <ul class="source-list">
+                  <li><a href="https://travel.state.gov/" target="_blank" rel="noopener">U.S. Department of State – Travel Advisories and Country Information</a></li>
+                  <li><a href="https://israel-entry.piba.gov.il/" target="_blank" rel="noopener">Israel ETA-IL Official Application Portal</a></li>
+                  <li><a href="https://visa2egypt.gov.eg/" target="_blank" rel="noopener">Egypt Official e-Visa Portal</a></li>
+                  <li><a href="https://travel-europe.europa.eu/etias" target="_blank" rel="noopener">European Union ETIAS Information</a></li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <section class="latest-section">
+            <h2>Latest Updates</h2>
+
+            <p class="empty-news">
+              More JOY Tours updates, destination notes and travel announcements will appear here soon.
+            </p>
+
+            <div class="news-template-note">
+              Future posts can be added here below the pinned visa guide. The visa guide remains pinned at the top so travelers can always find it quickly.
+            </div>
+
+            <!--
+            FUTURE NEWS POST TEMPLATE:
+
+            <article class="news-card">
+              <div class="post-badges">
+                <span class="post-badge category">Category</span>
+              </div>
+              <h3>Post Title</h3>
+              <p>Short preview text...</p>
+              <a href="#">Read more</a>
+            </article>
+            -->
+          </section>
+        </div>
+
+        <aside class="news-sidebar">
+          <div class="sidebar-card">
+            <h3>Pinned Travel Guide</h3>
+            <p>
+              Our U.S. citizen visa guide stays pinned here for quick access, even after new updates are added.
+            </p>
+            <a href="#visa-guide-us-citizens">Jump to visa guide</a>
+          </div>
+
+          <div class="sidebar-card">
+            <h3>Need help preparing?</h3>
+            <p>
+              Our team can help clarify documentation needs for your specific JOY Tours itinerary.
+            </p>
+            <a href="contact.html">Plan My Trip</a>
+          </div>
+
+          <div class="sidebar-card">
+            <h3>Contact</h3>
+            <p>
+              Questions before booking? Reach us directly by phone or email.
+            </p>
+            <a href="mailto:adventures@joytoures.co">adventures@joytoures.co</a>
+            <br>
+            <a href="tel:+17175217178">+1 (717)-521-7178</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo">
+          <img src="assets/images/assets/logo/joy-tours-logo.png" alt="JOY Tours logo" />
+        </div>
+        <p class="footer-tagline">Crafting meaningful journeys to the world's most sacred and historic destinations since 2026.</p>
+        <div class="footer-social">
+          <a href="#" title="Facebook">f</a>
+          <a href="#" title="Instagram">ig</a>
+          <a href="#" title="WhatsApp">w</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="itineraries.html">All Itineraries</a></li>
+          <li><a href="itineraries.html#holy-land">Holy Land</a></li>
+          <li><a href="itineraries.html#egypt">Egypt</a></li>
+          <li><a href="itineraries.html#rome">Rome & Italy</a></li>
+          <li><a href="itineraries.html#turkey">Turkey</a></li>
+          <li><a href="itineraries.html#greece">Greece</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About JOY Tours</a></li>
+          <li><a href="gallery.html">Travel Stories</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:adventures@joytoures.co">adventures@joytoures.co</a></li>
+          <li><a href="tel:+17175217178">+1 (717)-521-7178</a></li>
+          <li><a href="#">WhatsApp Us</a></li>
+          <li><a href="#">USA & Canada</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; 2026 JOY Tours. All rights reserved.</span>
+      <span>Heritage &amp; Leisure Tours</span>
+    </div>
+  </footer>
+
+  <script>
+    var burger = document.querySelector('.nav-burger');
+    var navLinks = document.querySelector('.nav-links');
+
+    if (burger && navLinks) {
+      burger.addEventListener('click', function() {
+        var isOpen = navLinks.style.display === 'flex';
+
+        navLinks.style.display = isOpen ? 'none' : 'flex';
+        navLinks.style.flexDirection = 'column';
+        navLinks.style.position = 'absolute';
+        navLinks.style.top = '78px';
+        navLinks.style.left = '0';
+        navLinks.style.right = '0';
+        navLinks.style.background = 'rgba(250,246,238,0.97)';
+        navLinks.style.padding = '16px 6%';
+        navLinks.style.borderBottom = '1px solid #E2D5BE';
+        navLinks.style.zIndex = '99';
+      });
+    }
+  </script>
+</body>
+</html>
