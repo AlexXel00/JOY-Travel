@@ -433,6 +433,125 @@
     transform: none;
   }
 }
+.featured-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  grid-template-rows: repeat(2, minmax(250px, 1fr));
+  gap: 28px;
+  margin-top: 70px;
+}
+
+.featured-card {
+  position: relative;
+  display: block;
+  min-height: 300px;
+  border-radius: 14px;
+  overflow: hidden;
+  text-decoration: none;
+  background: var(--cream-mid);
+  box-shadow: 0 22px 60px rgba(30, 63, 122, 0.10);
+}
+
+.featured-card-large {
+  grid-row: span 2;
+  min-height: 640px;
+}
+
+.featured-card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.55s ease;
+}
+
+.featured-card:hover img {
+  transform: scale(1.045);
+}
+
+.featured-card-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to top, rgba(26, 46, 80, 0.82), rgba(26, 46, 80, 0.18) 58%, rgba(26, 46, 80, 0.03)),
+    linear-gradient(to right, rgba(26, 46, 80, 0.16), rgba(26, 46, 80, 0));
+}
+
+.featured-card-content {
+  position: absolute;
+  left: 34px;
+  right: 34px;
+  bottom: 30px;
+  color: var(--white);
+  z-index: 2;
+}
+
+.featured-card-location {
+  color: var(--gold-pale);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.featured-card h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(28px, 3vw, 46px);
+  line-height: 1.05;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 18px;
+}
+
+.featured-card:not(.featured-card-large) h3 {
+  font-size: clamp(26px, 2.3vw, 36px);
+}
+
+.featured-card-line {
+  width: 100%;
+  height: 1px;
+  background: rgba(250,246,238,0.45);
+  margin-bottom: 16px;
+}
+
+.featured-card p {
+  color: rgba(250,246,238,0.85);
+  font-size: 13px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+@media (max-width: 900px) {
+  .featured-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .featured-card,
+  .featured-card-large {
+    min-height: 360px;
+    grid-row: auto;
+  }
+}
+
+@media (max-width: 520px) {
+  .featured-grid {
+    gap: 18px;
+    margin-top: 44px;
+  }
+
+  .featured-card,
+  .featured-card-large {
+    min-height: 300px;
+  }
+
+  .featured-card-content {
+    left: 24px;
+    right: 24px;
+    bottom: 24px;
+  }
+}
 </style>
 </head>
 <body>
@@ -508,38 +627,43 @@
     <h2 class="section-title">Our Featured Destinations</h2>
     <p class="section-body">From the shores of Galilee to the temples of the Nile — every JOY Tours journey is a step deeper into history and culture.</p>
   </div>
-  <div class="dest-grid">
-    <a href="itineraries.html#holy-land" class="dest-card large" id="holy-land-card">
-      <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=1200&q=80" class="slide active" alt="Dome of the Rock Jerusalem" />
-      <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1200&q=80" class="slide" alt="Sea of Galilee" />
-      <img src="https://images.unsplash.com/photo-1624138784614-87fd1b6528f8?auto=format&fit=crop&w=1200&q=80" class="slide" alt="Western Wall Jerusalem" />
-      <img src="https://images.unsplash.com/photo-1616788294341-f6c3e7d80a4a?auto=format&fit=crop&w=1200&q=80" class="slide" alt="Petra Jordan" />
-      
-      <div class="dest-overlay"></div>
-      <div class="dest-content">
-        <div class="dest-region">Israel · Palestine · Jordan</div>
-        <div class="dest-name">The Holy Land</div>
-        <span class="dest-days">10 – 15 Days · Biblical Sites · Pilgrimage · Jordan Extension</span>
+  <div class="featured-grid">
+    <a href="itineraries.html?tour=aut2" class="featured-card featured-card-large">
+      <img src="assets/images/kunsthistorisches_muesum_vienna.jpg" alt="Kunsthistorisches Museum, Vienna" />
+  
+      <div class="featured-card-overlay"></div>
+  
+      <div class="featured-card-content">
+        <div class="featured-card-location">Vienna · Salzburg · Munich</div>
+        <h3>The Grand Cultural Tour</h3>
+        <div class="featured-card-line"></div>
+        <p>12 Days · Culture & Leisure · Austria & Germany</p>
       </div>
     </a>
-    <a href="itineraries.html#egypt" class="dest-card" id="egypt-card">
-      <img src="https://images.unsplash.com/photo-1539768942893-daf53e448371?auto=format&fit=crop&w=1200&q=80" class="slide active" alt="Pyramids of Giza" />
-      <img src="https://images.unsplash.com/photo-1568322445389-f64ac2515020?auto=format&fit=crop&w=1200&q=80" class="slide" alt="Nile River Egypt" />
-      <img src="https://images.unsplash.com/photo-1553913861-c0fddf2619ee?auto=format&fit=crop&w=1200&q=80" class="slide" alt="Abu Simbel Egypt" />
-      <div class="dest-overlay"></div>
-      <div class="dest-content">
-        <div class="dest-region">Egypt</div>
-        <div class="dest-name">Pharaohs, Faith & the Nile</div>
-        <span class="dest-days">9 Days · Exodus Route · Ancient History</span>
+  
+    <a href="itineraries.html?tour=egypt2" class="featured-card">
+      <img src="assets/images/luxor.jpg" alt="Luxor, Egypt" />
+  
+      <div class="featured-card-overlay"></div>
+  
+      <div class="featured-card-content">
+        <div class="featured-card-location">Egypt</div>
+        <h3>Egypt Unveiled</h3>
+        <div class="featured-card-line"></div>
+        <p>9 Days · Heritage & Leisure · Cairo, Aswan, Luxor & Red Sea</p>
       </div>
     </a>
-    <a href="itineraries.html#rome" class="dest-card">
-      <img src="https://images.unsplash.com/photo-1515542622106-078bda21a1b8?w=800&q=80" alt="Rome" loading="lazy" />
-      <div class="dest-overlay"></div>
-      <div class="dest-content">
-        <div class="dest-region">Italy</div>
-        <div class="dest-name">Rome & Early Christianity</div>
-        <span class="dest-days">8 Days · Vatican · Apostles' Footsteps</span>
+  
+    <a href="itineraries.html?tour=greece1" class="featured-card">
+      <img src="assets/images/mars_hill_areopagus.jpg" alt="Mars Hill, Athens" />
+  
+      <div class="featured-card-overlay"></div>
+  
+      <div class="featured-card-content">
+        <div class="featured-card-location">Greece</div>
+        <h3>Footsteps of the Apostle Paul</h3>
+        <div class="featured-card-line"></div>
+        <p>8–9 Days · Biblical · Athens, Corinth, Thessaloniki & Kavala</p>
       </div>
     </a>
   </div>
