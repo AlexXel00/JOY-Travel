@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You – JOY Tours</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --gold: #D4962A;
+      --cream: #FAF6EE;
+      --cream-dark: #E2D5BE;
+      --text: #1E3F7A;
+      --text-mid: #2E5299;
+      --white: #FFFFFF;
+      --teal: #2E809B;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: 'Jost', sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 6%;
+    }
+
+    .thank-you-card {
+      max-width: 760px;
+      background: var(--white);
+      border: 1px solid var(--cream-dark);
+      border-radius: 18px;
+      padding: clamp(34px, 5vw, 64px);
+      text-align: center;
+      box-shadow: 0 24px 70px rgba(30, 63, 122, 0.08);
+    }
+
+    .eyebrow {
+      font-size: 11px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 600;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(42px, 5vw, 72px);
+      line-height: 1.04;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 22px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.9;
+      color: var(--text-mid);
+      font-weight: 300;
+      margin-bottom: 18px;
+    }
+
+    a {
+      color: var(--text);
+      text-decoration: none;
+      border-bottom: 1px solid var(--gold);
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 26px;
+      background: var(--gold);
+      color: var(--white);
+      border: none;
+      border-radius: 3px;
+      padding: 15px 32px;
+      font-size: 12px;
+      letter-spacing: 2.4px;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="thank-you-card">
+    <div class="eyebrow">Request Sent</div>
+
+    <h1>Thank you for travelling with JOY TOURS!</h1>
+
+    <p>
+      Your request has been sent successfully. We will review your travel details and get back to you as soon as possible.
+    </p>
+
+    <p>
+      If you have questions in the meantime, you can reach us by phone at
+      <a href="tel:+17175217178">+1 (717)-521-7178</a>
+      or by email at
+      <a href="mailto:adventures@joytoures.co">adventures@joytoures.co</a>.
+    </p>
+
+    <a href="index.html" class="btn">Back to Home</a>
+  </div>
+</body>
+</html>
