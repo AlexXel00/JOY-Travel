@@ -537,6 +537,131 @@
       font-size: 12px; font-weight: 300; color: var(--text-mid);
       white-space: nowrap;
     }
+  /* FULLSCREEN IMAGE LIGHTBOX */
+  .gallery-slide-img {
+    cursor: zoom-in;
+  }
+  
+  body.lightbox-open {
+    overflow: hidden;
+  }
+  
+  .image-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 34px 74px 74px;
+    background: rgba(10, 18, 34, 0.92);
+  }
+  
+  .image-lightbox.active {
+    display: flex;
+  }
+  
+  .image-lightbox img {
+    max-width: 92vw;
+    max-height: 82vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.45);
+  }
+  
+  .image-lightbox-caption {
+    position: absolute;
+    left: 24px;
+    right: 24px;
+    bottom: 26px;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 0.04em;
+  }
+  
+  .image-lightbox-close,
+  .image-lightbox-btn {
+    position: absolute;
+    border: none;
+    background: rgba(255, 255, 255, 0.92);
+    color: #1E3F7A;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, background 0.2s ease;
+  }
+  
+  .image-lightbox-close:hover,
+  .image-lightbox-btn:hover {
+    background: #fff;
+    transform: scale(1.06);
+  }
+  
+  .image-lightbox-close {
+    top: 22px;
+    right: 24px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    font-size: 30px;
+    line-height: 1;
+  }
+  
+  .image-lightbox-btn {
+    top: 50%;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    font-size: 42px;
+    line-height: 1;
+  }
+  
+  .image-lightbox-btn:hover {
+    transform: translateY(-50%) scale(1.06);
+  }
+  
+  .image-lightbox-prev {
+    left: 24px;
+  }
+  
+  .image-lightbox-next {
+    right: 24px;
+  }
+  
+  @media (max-width: 768px) {
+    .image-lightbox {
+      padding: 70px 18px 72px;
+    }
+  
+    .image-lightbox img {
+      max-width: 96vw;
+      max-height: 76vh;
+    }
+  
+    .image-lightbox-btn {
+      width: 42px;
+      height: 42px;
+      font-size: 34px;
+    }
+  
+    .image-lightbox-prev {
+      left: 10px;
+    }
+  
+    .image-lightbox-next {
+      right: 10px;
+    }
+  
+    .image-lightbox-caption {
+      font-size: 13px;
+      bottom: 22px;
+    }
+  }  
   </style>
 </head>
 <body>
@@ -4265,7 +4390,22 @@
     <span>Heritage &amp; Leisure Tours</span>
   </div>
 </footer>
+<!-- FULLSCREEN IMAGE LIGHTBOX -->
+<div class="image-lightbox" id="imageLightbox" aria-hidden="true">
+  <button class="image-lightbox-close" type="button" aria-label="Close image viewer">&times;</button>
 
+  <button class="image-lightbox-btn image-lightbox-prev" type="button" aria-label="Previous image">
+    ‹
+  </button>
+
+  <img id="lightboxImage" src="" alt="" />
+
+  <button class="image-lightbox-btn image-lightbox-next" type="button" aria-label="Next image">
+    ›
+  </button>
+
+  <div class="image-lightbox-caption" id="lightboxCaption"></div>
+</div>
 <script>
   // Gallery slider
   function initGallery(gallery) {
@@ -4289,7 +4429,114 @@
     goTo(0);
   }
   document.querySelectorAll('.modal-gallery').forEach(initGallery);
-
+  // Fullscreen image lightbox
+  var imageLightbox = document.getElementById('imageLightbox');
+  var lightboxImage = document.getElementById('lightboxImage');
+  var lightboxCaption = document.getElementById('lightboxCaption');
+  var lightboxClose = document.querySelector('.image-lightbox-close');
+  var lightboxPrev = document.querySelector('.image-lightbox-prev');
+  var lightboxNext = document.querySelector('.image-lightbox-next');
+  
+  var currentLightboxImages = [];
+  var currentLightboxIndex = 0;
+  
+  function openImageLightbox(clickedImage) {
+    var gallery = clickedImage.closest('.modal-gallery');
+    if (!gallery) return;
+  
+    currentLightboxImages = Array.from(gallery.querySelectorAll('.gallery-slide-img'));
+    currentLightboxIndex = currentLightboxImages.indexOf(clickedImage);
+  
+    if (currentLightboxIndex < 0) {
+      currentLightboxIndex = 0;
+    }
+  
+    updateLightboxImage();
+  
+    imageLightbox.classList.add('active');
+    imageLightbox.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('lightbox-open');
+  }
+  
+  function updateLightboxImage() {
+    var image = currentLightboxImages[currentLightboxIndex];
+    if (!image) return;
+  
+    lightboxImage.src = image.currentSrc || image.src;
+    lightboxImage.alt = image.alt || '';
+  
+    var slide = image.closest('.gallery-slide');
+    var caption = slide ? slide.querySelector('.gallery-caption') : null;
+  
+    lightboxCaption.textContent = caption ? caption.textContent : image.alt;
+  }
+  
+  function closeImageLightbox() {
+    imageLightbox.classList.remove('active');
+    imageLightbox.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('lightbox-open');
+  
+    lightboxImage.src = '';
+    lightboxImage.alt = '';
+    lightboxCaption.textContent = '';
+  }
+  
+  function changeLightboxImage(direction) {
+    if (!currentLightboxImages.length) return;
+  
+    currentLightboxIndex =
+      (currentLightboxIndex + direction + currentLightboxImages.length) %
+      currentLightboxImages.length;
+  
+    updateLightboxImage();
+  }
+  
+  document.querySelectorAll('.modal-gallery').forEach(function(gallery) {
+    gallery.addEventListener('click', function(event) {
+      var clickedImage = event.target.closest('.gallery-slide-img');
+  
+      if (!clickedImage) return;
+  
+      event.stopPropagation();
+      openImageLightbox(clickedImage);
+    });
+  });
+  
+  lightboxClose.addEventListener('click', function() {
+    closeImageLightbox();
+  });
+  
+  lightboxPrev.addEventListener('click', function(event) {
+    event.stopPropagation();
+    changeLightboxImage(-1);
+  });
+  
+  lightboxNext.addEventListener('click', function(event) {
+    event.stopPropagation();
+    changeLightboxImage(1);
+  });
+  
+  imageLightbox.addEventListener('click', function(event) {
+    if (event.target === imageLightbox) {
+      closeImageLightbox();
+    }
+  });
+  
+  document.addEventListener('keydown', function(event) {
+    if (!imageLightbox.classList.contains('active')) return;
+  
+    if (event.key === 'Escape') {
+      closeImageLightbox();
+    }
+  
+    if (event.key === 'ArrowLeft') {
+      changeLightboxImage(-1);
+    }
+  
+    if (event.key === 'ArrowRight') {
+      changeLightboxImage(1);
+    }
+  });
   // Burger menu
   var burger = document.querySelector('.nav-burger');
   var navLinks = document.querySelector('.nav-links');
