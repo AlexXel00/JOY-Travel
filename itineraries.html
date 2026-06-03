@@ -4429,6 +4429,22 @@
     goTo(0);
   }
   document.querySelectorAll('.modal-gallery').forEach(initGallery);
+
+  // Open modal directly from URL, e.g. itineraries.html?tour=aut2
+  function openTourFromUrl() {
+    var params = new URLSearchParams(window.location.search);
+    var tourId = params.get('tour');
+  
+    if (!tourId) return;
+  
+    var modal = document.getElementById('modal-' + tourId);
+  
+    if (!modal) return;
+  
+    openModal(tourId);
+  }
+  
+  window.addEventListener('load', openTourFromUrl);
   // Fullscreen image lightbox
   var imageLightbox = document.getElementById('imageLightbox');
   var lightboxImage = document.getElementById('lightboxImage');
