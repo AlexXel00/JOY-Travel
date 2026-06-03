@@ -132,11 +132,13 @@
     }
 
     .about-hero-inner {
-      padding: 78px 6% 76px;
-      display: grid;
-      grid-template-columns: minmax(0, 1.05fr) minmax(300px, 0.75fr);
-      gap: 70px;
-      align-items: end;
+      padding: 92px 6% 88px;
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    .about-hero-content {
+      max-width: 860px;
     }
 
     .eyebrow {
@@ -162,12 +164,12 @@
 
     .about-hero h1 {
       font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(42px, 5.4vw, 76px);
+      font-size: clamp(44px, 5.2vw, 76px);
       font-weight: 600;
       color: var(--text);
       line-height: 1.04;
       margin-bottom: 24px;
-      max-width: 760px;
+      max-width: 820px;
     }
 
     .about-hero h1 em {
@@ -183,28 +185,7 @@
       max-width: 660px;
     }
 
-    .hero-note {
-      background: var(--white);
-      border: 1px solid var(--cream-dark);
-      padding: 34px;
-      border-radius: 2px;
-      box-shadow: 0 24px 70px rgba(30, 63, 122, 0.08);
-    }
-
-    .hero-note-number {
-      font-family: 'Cormorant Garamond', serif;
-      color: var(--gold);
-      font-size: 42px;
-      line-height: 1;
-      margin-bottom: 14px;
-    }
-
-    .hero-note p {
-      color: var(--text-mid);
-      font-size: 15px;
-      font-weight: 300;
-      line-height: 1.85;
-    }
+   
 
     /* INTRO */
     .about-intro {
@@ -614,8 +595,7 @@
 
     @media (max-width: 1100px) {
       .about-hero-inner {
-        grid-template-columns: 1fr;
-        gap: 38px;
+        max-width: 1180px;
       }
 
       .person-card {
@@ -653,9 +633,6 @@
         padding: 54px 6% 56px;
       }
 
-      .hero-note {
-        padding: 26px;
-      }
 
       .about-intro {
         padding-top: 58px;
@@ -722,23 +699,16 @@
   <main>
     <section class="about-hero">
       <div class="about-hero-inner">
-        <div>
+        <div class="about-hero-content">
           <div class="eyebrow">
             <div class="eyebrow-line"></div>
             <span>About JOY Tours</span>
           </div>
-
+    
           <h1>Journeys led by people who know the <em>story behind the place.</em></h1>
-
+    
           <p class="about-hero-sub">
             JOY Tours was created for travelers who want more than a checklist of destinations. Our journeys are shaped by history, faith, culture, music, sacred architecture and the human stories that connect places across time.
-          </p>
-        </div>
-
-        <div class="hero-note">
-          <div class="hero-note-number">01</div>
-          <p>
-            Every journey is personally shaped by guides who have spent years walking these roads, studying these places and leading travelers through moments that stay with them long after they return home.
           </p>
         </div>
       </div>
