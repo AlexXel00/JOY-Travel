@@ -781,9 +781,7 @@
 
     <div class="itin-card" data-section="holy-land" onclick="openModal('hl3')">
       <div class="itin-card-img">
-        <div class="itin-card-img-placeholder">
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><path d="M8 40l10-20 8 13 6-8 10 15H8Z" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/><circle cx="34" cy="14" r="4" stroke="#D4962A" stroke-width="1.5"/></svg>
-        </div>
+        <img src="assets/images/yad_vashem.jpg" alt="Yad Vashem, Jerusalem" loading="lazy" />
         <div class="itin-card-badge">Heritage</div>
       </div>
       <div class="itin-card-body">
@@ -2337,10 +2335,17 @@
 <div class="modal-overlay" id="modal-hl3">
   <div class="modal">
     <div class="modal-hero">
-      <div class="itin-card-img-placeholder" style="height:100%"></div>
-      <div class="modal-hero-overlay"></div>
-      <div class="modal-hero-content"><div class="modal-hero-region">Israel · Jerusalem</div><div class="modal-hero-title">Jewish Heritage Journey</div></div>
-      <button class="modal-close" onclick="closeModal('hl3')"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 1l12 12M13 1L1 13" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+        <img src="assets/images/yad_vashem.jpg" alt="Yad Vashem, Jerusalem" />
+        <div class="modal-hero-overlay"></div>
+        <div class="modal-hero-content">
+          <div class="modal-hero-region">Israel · Jordan</div>
+          <div class="modal-hero-title">Jewish Heritage Journey</div>
+        </div>
+      <button class="modal-close" onclick="closeModal('hl3')">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M1 1l12 12M13 1L1 13" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </button>
     </div>
     <div class="modal-meta">
       <div class="modal-meta-item"><div class="modal-meta-label">Duration</div><div class="modal-meta-value">8 Days</div></div>
@@ -2351,29 +2356,139 @@
       <p class="modal-focus">Jewish history, the Second Temple period and Herodian architecture — from the Western Wall to the fortress of Masada.</p>
       <div class="modal-gallery">
         <div class="gallery-track">
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/indipendence_hall_israel.jpg" class="gallery-slide-img" alt="Indipendence Hall, Tel Aviv" />
+            <div class="gallery-caption">Indipendence Hall, Tel Aviv</div>
           </div>
-          <div class="gallery-caption">Western Wall, Jerusalem</div>
-        </div>
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/neve_tzedek.jpg" class="gallery-slide-img" alt="Neve Tzdek, Tel Aviv" />
+            <div class="gallery-caption">Neve Tzdek, Tel Aviv</div>
           </div>
-          <div class="gallery-caption">Masada fortress overlooking the Dead Sea</div>
-        </div>
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/casarea_national_park.jpg" class="gallery-slide-img" alt="Caesarea National Park" />
+            <div class="gallery-caption">Caesarea National Park</div>
           </div>
-          <div class="gallery-caption">Dead Sea shoreline</div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/haifa.jpg" class="gallery-slide-img" alt="Haifa" />
+            <div class="gallery-caption">Haifa</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/ari_synagogue.jpg" class="gallery-slide-img" alt="Ari Synagogue, Safed" />
+            <div class="gallery-caption">Ari Synagogue, Safed</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/Abuhav_synagogue.jpg" class="gallery-slide-img" alt="Abuhav Synagogue, Safed" />
+            <div class="gallery-caption">Abuhav Synagogue, Safed</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/tomb_rabbi_shimon_bar_yochai.jpg" class="gallery-slide-img" alt="Tomb of Rabbi Shimon bar Yochai, Meron" />
+            <div class="gallery-caption">Tomb of Rabbi Shimon bar Yochai, Meron</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/Ancient_synagogues_of_the_Galilee.jpg" class="gallery-slide-img" alt="Ancient synagogues of the Galilee" />
+            <div class="gallery-caption">Ancient synagogues of the Galilee</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/golan_heights2.jpg" class="gallery-slide-img" alt="Golan Heights" />
+            <div class="gallery-caption">Golan Heights</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/qasr_al-yahud_baptismal.jpg" class="gallery-slide-img" alt="Qasr al-Yahud Baptism Site, Jordan" />
+            <div class="gallery-caption">Qasr al-Yahud Baptism Site, Jordan</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/dead_sea_jordan.jpg" class="gallery-slide-img" alt="Dead Sea, Jordan" />
+            <div class="gallery-caption">Dead Sea, Jordan</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/qumran.jpg" class="gallery-slide-img" alt="Qumran, Jordan" />
+            <div class="gallery-caption">Qumran, Jordan</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/western_wall_jerusalem.jpg" class="gallery-slide-img" alt="Western Wall, Jerusalem" />
+            <div class="gallery-caption">Western Wall, Jerusalem</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/davidson_center.jpg" class="gallery-slide-img" alt="Davidson Center, Jerusalem" />
+            <div class="gallery-caption">Davidson Center, Jerusalem</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/jewish_quarter_jersualem.jpg" class="gallery-slide-img" alt="Jewish Quarter, Jerusalem" />
+            <div class="gallery-caption">Jewish Quarter, Jerusalem</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/hezekiah-s_tunnel.jpg" class="gallery-slide-img" alt="Hezekiah's Tunnel, Jerusalem" />
+            <div class="gallery-caption">Hezekiah's Tunnel, Jerusalem</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/hurva_syagogue_jerusalem.jpg" class="gallery-slide-img" alt="Hurva Synagogue, Jerusalem" />
+            <div class="gallery-caption">Hurva Synagogue, Jerusalem</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/yad_vashem.jpg" class="gallery-slide-img" alt="Yad Vashem, Jerusalem" />
+            <div class="gallery-caption">Yad Vashem, Jerusalem</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/israel_museum.jpg" class="gallery-slide-img" alt="Israel Museum, Jerusalem" />
+            <div class="gallery-caption">Israel Museum, Jerusalem</div>
+          </div>
+      
         </div>
+      
+        <button class="gallery-btn gallery-prev">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+            <path d="M6 2L3 5l3 3" stroke="#1E3F7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      
+        <button class="gallery-btn gallery-next">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+            <path d="M4 2l3 3-3 3" stroke="#1E3F7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      
+        <div class="gallery-dots">
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
         </div>
-        <button class="gallery-btn gallery-prev"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M6 2L3 5l3 3" stroke="#1E3F7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <button class="gallery-btn gallery-next"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M4 2l3 3-3 3" stroke="#1E3F7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <div class="gallery-dots"><button class="gallery-dot"></button><button class="gallery-dot"></button><button class="gallery-dot"></button></div>
-        <div class="gallery-counter">1 / 3</div>
+      
+        <div class="gallery-counter">1 / 19</div>
       </div>
       <div class="modal-days-title">Day by Day</div>
 
