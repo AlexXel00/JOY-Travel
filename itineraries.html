@@ -765,9 +765,7 @@
 
     <div class="itin-card" data-section="holy-land" onclick="openModal('hl2')">
       <div class="itin-card-img">
-        <div class="itin-card-img-placeholder">
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><path d="M8 40l10-20 8 13 6-8 10 15H8Z" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/><circle cx="34" cy="14" r="4" stroke="#D4962A" stroke-width="1.5"/></svg>
-        </div>
+        <img src="assets/images/pater_noster_church.jpg" alt="Pater Noster Chruch, Church" loading="lazy" />
         <div class="itin-card-badge">Catholic</div>
       </div>
       <div class="itin-card-body">
@@ -2031,10 +2029,17 @@
 <div class="modal-overlay" id="modal-hl2">
   <div class="modal">
     <div class="modal-hero">
-      <div class="itin-card-img-placeholder" style="height:100%"><svg width="64" height="64" viewBox="0 0 48 48" fill="none"><path d="M8 40l10-20 8 13 6-8 10 15H8Z" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg></div>
+      <img src="assets/images/pater_noster_church.jpg" alt="Pater Noster Chruch, Church" />
       <div class="modal-hero-overlay"></div>
-      <div class="modal-hero-content"><div class="modal-hero-region">Israel · Palestine</div><div class="modal-hero-title">Holy Land Tour<br>(Catholic Oriented)</div></div>
-      <button class="modal-close" onclick="closeModal('hl2')"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 1l12 12M13 1L1 13" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+      <div class="modal-hero-content">
+        <div class="modal-hero-region">Israel · Palestine</div>
+        <div class="modal-hero-title">Holy Land Tour (Catholic Oriented)</div>
+      </div>
+      <button class="modal-close" onclick="closeModal('hl2')">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M1 1l12 12M13 1L1 13" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </button>
     </div>
     <div class="modal-meta">
       <div class="modal-meta-item"><div class="modal-meta-label">Duration</div><div class="modal-meta-value">10 Days</div></div>
@@ -2045,29 +2050,103 @@
       <p class="modal-focus">Sacred sites, Mass celebrations, Marian devotion and the rich tradition of Catholic pilgrimage through the Holy Land.</p>
       <div class="modal-gallery">
         <div class="gallery-track">
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/galilee.jpg" class="gallery-slide-img" alt="Galilee Town" />
+            <div class="gallery-caption">Galilee Town</div>
           </div>
-          <div class="gallery-caption">Basilica of the Annunciation, Nazareth</div>
-        </div>
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/st_joseph-chruch_nazareth.jpg" class="gallery-slide-img" alt="Church of St. Joseph, Nazareth" />
+            <div class="gallery-caption">Church of St. Joseph, Nazareth</div>
           </div>
-          <div class="gallery-caption">Church of the Nativity, Bethlehem</div>
-        </div>
-        <div class="gallery-slide">
-          <div class="gallery-slide-placeholder">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#D4962A" stroke-width="1.5"/><circle cx="17" cy="21" r="4" stroke="#D4962A" stroke-width="1.5"/><path d="M6 32l10-8 8 6 6-5 12 9" stroke="#D4962A" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/mount_tabor.jpg" class="gallery-slide-img" alt="Mount Tabor, Galilee" />
+            <div class="gallery-caption">Mount Tabor, Galilee</div>
           </div>
-          <div class="gallery-caption">Shepherds' Field at sunset</div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/boat_ride_sea_of_galilee.jpg" class="gallery-slide-img" alt="Boat Ride on the Sea of Galilee" />
+            <div class="gallery-caption">Boat Ride on the Sea of Galilee</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/mount_beatitudes.jpg" class="gallery-slide-img" alt="Mount of Beatitudes, Sea of Galilee" />
+            <div class="gallery-caption">Mount of Beatitudes, Sea of Galilee</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/jordan_valley.jpg" class="gallery-slide-img" alt="Jordan Valley" />
+            <div class="gallery-caption">Jordan Valley</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/yardenit_renewal_baptismal_promises.jpg" class="gallery-slide-img" alt="Renewal of Baptismal Promises, Yardenit" />
+            <div class="gallery-caption">Renewal of Baptismal Promises, Yardenit</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/church_of_nativity.jpg" class="gallery-slide-img" alt="Church of Nativity, Jerusalem" />
+            <div class="gallery-caption">Church of Nativity, Jerusalem</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/church_of_all_nations.jpg" class="gallery-slide-img" alt="Church of All Nations, Jerusalem" />
+            <div class="gallery-caption">Church of All Nations, Jerusalem</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/mount_olives_jerusalem.jpg" class="gallery-slide-img" alt="Mount of Olives, Jerusalem" />
+            <div class="gallery-caption">Mount of Olives, Jerusalem</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/pater_noster_church.jpg" class="gallery-slide-img" alt="Pater Noster Chruch, Church" />
+            <div class="gallery-caption">Pater Noster Chruch, Church</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/church_holy_sepulchre.jpg" class="gallery-slide-img" alt="Church of the Holy Sepulchre, Jerusalem" />
+            <div class="gallery-caption">Church of the Holy Sepulchre, Jerusalem</div>
+          </div>
+      
+          <div class="gallery-slide">
+            <img src="assets/images/church_st_peter_gallicantu.jpg" class="gallery-slide-img" alt="Church of St. Peter in Gallicantu, Jerusalem" />
+            <div class="gallery-caption">Church of St. Peter in Gallicantu, Jerusalem</div>
+          </div>
+      
         </div>
+      
+        <button class="gallery-btn gallery-prev">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+            <path d="M6 2L3 5l3 3" stroke="#1E3F7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      
+        <button class="gallery-btn gallery-next">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+            <path d="M4 2l3 3-3 3" stroke="#1E3F7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      
+        <div class="gallery-dots">
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
+          <button class="gallery-dot"></button>
         </div>
-        <button class="gallery-btn gallery-prev"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M6 2L3 5l3 3" stroke="#1E3F7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <button class="gallery-btn gallery-next"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M4 2l3 3-3 3" stroke="#1E3F7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <div class="gallery-dots"><button class="gallery-dot"></button><button class="gallery-dot"></button><button class="gallery-dot"></button></div>
-        <div class="gallery-counter">1 / 3</div>
+      
+        <div class="gallery-counter">1 / 13</div>
       </div>
       <div class="modal-days-title">Day by Day</div>
       
